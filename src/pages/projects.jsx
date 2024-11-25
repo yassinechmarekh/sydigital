@@ -1,16 +1,14 @@
-import Callprjct from '@/components/Global/callprjct';
-import Projects from '@/components/Global/projects';
-import Projectshero from '@/components/Global/projectshero';
-import React from 'react';
+import Callprjct from '@/components/Global/callprjct'
+import Projectshero from '@/components/Global/projectshero'
+import Projects from '@/components/Global/projects'
+import React from 'react'
 
-const Projectspage = () => {
-    return (
-        <div>
-            <Projectshero/>
+export default function Projectspg() {
+  return (
+    <div>
+          <Projectshero/>
     <Projects/>
     <Callprjct/>
-        </div>
-    );
+    </div>
+  )
 }
-
-export default Projectspage;

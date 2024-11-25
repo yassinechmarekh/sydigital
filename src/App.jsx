@@ -5,13 +5,15 @@ import Header from "./components/Global/Header";
 import Footer from "./components/Global/Footer";
 import About from "./Pages/About";
 import Services from "./Pages/Services";
-import Projects from "./Pages/Projects";
+
 import Blogs from "./Pages/Blogs";
 import Contact from "./Pages/Contact";
 import SingleBlog from "./Pages/SingleBlog";
 import Appointment from "./Pages/Appointment";
 import ProjectInfo from "./Pages/ProjectInfo";
 import Policy from "./Pages/Policy";
+import Singleproject from "./pages/singleproject";
+import Projectspg from "./Pages/Projects";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -33,13 +35,14 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects" element={<Projectspg />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/blog/:slug" element={<SingleBlog />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/appointment" element={<Appointment />} />
           <Route path="/project-info" element={<ProjectInfo />} />
           <Route path="/privacy-policy" element={<Policy />} />
+          <Route path="/project/:id" element={<Singleproject />} />
         </Routes>
         <Footer />
       </BrowserRouter>
