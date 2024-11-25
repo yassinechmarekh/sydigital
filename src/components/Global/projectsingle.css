@@ -1,0 +1,60 @@
+#projectimagescontainer{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 1%;
+    row-gap: 2vh;
+    margin-top: 5vh;
+
+}
+#projectimagescontainer div{
+    width: 32%;
+    height: 30vh;
+
+}
+#projectimagescontainer div img{
+    width: 100%;
+    height: 100%;
+}
+#cigimageprjct{
+    width: 70%;
+    height: auto;
+    align-self: center;
+}
+#projectcotainer p{
+    width: 68%;
+    text-align: center;
+    align-self: center;
+}
+#projectcotainer ul{
+    margin-left: 16%;
+}
+#projectcotainer{
+    display: flex;
+    flex-direction: column;
+
+
+}
+#livepreview{
+   width: 25%;
+    background-color: rebeccapurple;
+}
+.imgprjcthr{
+    width: 100%;
+}
+.containerprojecthero{
+    display: flex;
+    width: 100%;
+
+}
+.imgheroprjct{
+    width: 40%;
+
+}
+.heroprjcttxt{
+    width: 50%;
+    background-color: red;
+
+}

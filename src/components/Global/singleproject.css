@@ -1,0 +1,75 @@
+.projectimagecontai{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2%;
+    row-gap: 2vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+.cardimgg{
+    width: auto;
+    height: auto;
+    display: flex;
+  
+}
+.cardcontainerimage{
+    width: auto;
+    height: auto;
+   
+}
+.cardimgg img{
+    height: auto;
+    width: auto;
+}
+.heroprjcttxt{
+ 
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 2vh;
+    width: 50%;
+}
+.containerprojecthero{
+    display: flex;
+    justify-content: space-around;
+
+}
+.imgheroprjct{
+    width: 40%;
+    
+}
+.Projectpara{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.Projectpara p{
+width: 70%;
+text-align: center;
+}
+#seemorebtn{
+    display: inline-flex;
+    transition: all .3s ease-in-out;
+    
+    padding: 10px 20px;
+  
+}
+
+@media (max-width:900px) {
+    .containerprojecthero{
+        flex-direction: column;
+        row-gap: 2vh;
+    }
+    .heroprjcttxt{
+        width: 100%;
+    }
+    .imgheroprjct{
+        width: 100%;
+    }
+    .Projectpara p{width: 90%;}
+    #seemorebtn{
+        text-align: center;
+    }
+}

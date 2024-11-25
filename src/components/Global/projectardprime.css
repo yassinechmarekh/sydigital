@@ -1,0 +1,57 @@
+.cardprojectprime{
+    width: 25%;
+    height: auto;
+}
+.cardprojectprime img{
+   min-height: 30vh;
+width:100%}
+.orjctcardcont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: 6%;
+    row-gap: 3vh;
+}
+.contantcardd{
+    width: 100%;
+    width: 98%;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 1%;
+}
+.contantcardd p{
+    transition: all .3s ease-in-out;
+ opacity: 0;
+}
+.contantcardd h2{
+    text-align: center;
+opacity: 0;    transition: all .3s ease-in-out;
+    
+}
+.contantcardd:hover{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), #2a3439);
+
+}
+.contantcardd:hover p{
+  opacity: 1;
+}
+.contantcardd:hover h2{
+  opacity: 1;
+}
+@media (min-width:900px) and (max-width:1024px) {
+    .cardprojectprime{
+        width: 40%;
+        
+    }
+    
+}
+@media (max-width:900px){
+    .cardprojectprime{
+        width: 80%;
+        
+    }
+}

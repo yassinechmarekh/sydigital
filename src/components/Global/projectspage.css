@@ -1,0 +1,111 @@
+#heroprojects{
+    display: flex;
+    justify-content: space-between;
+}
+#heroprojectstxt{
+    width: 50%;
+align-self: center;
+
+}
+#heroprojectstxt p{
+    width: 80%;
+    font-weight: 500;
+    padding-left: 1%;
+}
+#heroprojectsimgs{
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+}
+
+#overl{
+    width: 100%;
+    height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgb(35,115,121);
+background: linear-gradient(24deg, rgba(35,115,121,0.6086367652529762) 15%, rgba(33,235,214,0.7879084739364496) 42%, rgba(20,37,50,0.6618580537683824) 100%);  
+clip-path: circle(600px at right 800px);
+    z-index: 1003;
+}
+
+#overl img{
+    width: 200px;
+    height: auto;
+    position: absolute;
+    right: 70px;
+    bottom: 40px;
+}
+.btnheroprjcts{
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-left: 1%;
+
+}
+#characterprojectshero{
+    width: 80%;
+    height: auto;
+    justify-self: self-end;
+}
+@media (min-width:900px) and (max-width:1024px){
+    #overl img{
+        bottom: 0;
+    }
+
+}
+@media (min-width:767px) and (max-width:900px) {
+   
+    #heroprojects{
+        flex-direction: column;
+    }
+    #heroprojectstxt{
+        width: 98%;
+        margin-left: 1%;
+        margin-top: 2vh;
+    }
+    #heroprojectsimgs{
+        width: 60%;
+        align-self: self-end;
+        justify-content: center;
+     
+    }
+    #overl img{
+right: 0;
+        bottom: 0;
+    }
+    #heroprojectstxt p{
+        width: 90%;
+    }
+}
+
+@media (max-width:767px) {
+    #heroprojects{
+        flex-direction: column;
+    }
+    #heroprojectstxt{
+        width: 98%;
+        margin-left: 1%;
+        margin-top: 2vh;
+    }
+    #heroprojectsimgs{
+        width: 100%;
+     
+    }
+    #overl img{
+right: 0;
+        bottom: 0;
+    }
+    #heroprojectstxt p{
+        width: 90%;
+    }
+}
