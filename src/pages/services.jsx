@@ -1,9 +1,9 @@
+import Bannerservices from '@/components/Global/bannerservices'
+import Serviceshero from '@/components/Global/serviceshero'
+import Servicesmain from '@/components/Global/servicesmain'
 import React, { useState } from 'react'
 
 
-import Bannerservices from '@/components/Global/bannerservices'
-import Servicesmain from '@/components/Global/servicesmain'
-import Serviceshero from '@/components/Global/serviceshero'
 
 
 

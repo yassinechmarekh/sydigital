@@ -1,3 +1,6 @@
+import Banda from '@/components/Global/banda'
+import Projects from '@/components/Global/projects'
+import Why from '@/components/Global/why'
 import ContactBanner from '@/components/Sections/Home/ContactBanner'
 import Hero from '@/components/Sections/Home/Hero'
 import OurServices from '@/components/Sections/Home/OurServices'
@@ -9,9 +12,13 @@ export default function Home() {
   return (
     <div>
       <Hero/>
+      <Banda/>
+      <Why/>
       <OurServices/>
       <WorkProcess/>
+
       <Pricing/>
+      <Projects/>
       <ContactBanner/>
     </div>
   )
