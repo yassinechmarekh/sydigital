@@ -1,0 +1,136 @@
+.servicescardscontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 5vh;
+
+}
+.starelement1{
+    position: absolute;
+    width: 20%;
+    top: 0;
+    right: 0;
+    opacity: .9;
+}
+.starelement2{
+    position: absolute;
+    width: 30%;
+    top: 0;
+    left: -15%;
+
+}
+.starelement3{
+    position: absolute;
+    width: 20%;
+    bottom: 0;
+    left: 0%;
+
+}
+.cardservice{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+  
+
+}
+.cardservicetext{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.circlebig{
+    position: absolute;
+    width: 300px;
+   
+    border-radius: 50%;
+    height: 300px;
+    opacity: .05;
+    top: 50%;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circlesmall{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    opacity: .1;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}
+.cardserviceimg{
+    width: 40%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+   
+}
+.imagecharacard{
+    width: 70%;
+    z-index: 2;
+
+    height: auto;
+    
+}
+.lijablahcontainer{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 3vh;
+    column-gap: 2%;
+    padding-top: 4vh;
+}
+.lijablahcontainer div{
+    padding: 5px 10px;
+    border-radius: 20px;
+    
+}
+.cardservicetext p{
+    margin-top: 3vh;
+
+}
+.cardservbtn{
+    padding: 10px 20px;
+    border-radius: 20px;
+
+    display: inline-flex;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vh;
+    cursor: pointer;
+}
+@media (min-width:767px) and (max-width:900px){
+    .cardservice{
+        width: 80%;
+    }
+
+}
+@media (max-width:900px) {
+    .cardservice{
+        flex-direction: column;
+        overflow: hidden;
+        
+    }
+    .cardservicetext{
+        width: 100%;
+    }
+    .cardserviceimg{
+        width: 100%;
+    }
+    .cardservbtn{
+        width: auto;
+    }
+    .starelement2{
+        transform: rotate(90deg);
+        top: 6%;
+        left: -10%;
+    }
+    
+}
