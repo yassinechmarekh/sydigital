@@ -5,8 +5,8 @@ const Serviceherocard = ({iconser,titleservcard,paraservcard}) => {
     return (
         <div id="cardsev">
         {iconser}
-            <span className='font-title font-bold text-gunmetal dark:text-turquoise'>{titleservcard}</span>
-            <p className='font-subtitle'>{paraservcard}</p>
+            <span className='text-xl font-title font-bold text-caribbean-current dark:text-turquoise'>{titleservcard}</span>
+            <p className='parag text-sm'>{paraservcard}</p>
             
         </div>
     );

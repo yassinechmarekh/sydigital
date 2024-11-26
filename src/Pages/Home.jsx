@@ -15,10 +15,9 @@ export default function Home() {
       <Banda/>
       <Why/>
       <OurServices/>
-      <WorkProcess/>
-
-      <Pricing/>
       <Projects/>
+      <WorkProcess/>
+      <Pricing/>
       <ContactBanner/>
     </div>
   )

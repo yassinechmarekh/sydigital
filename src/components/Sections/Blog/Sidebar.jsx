@@ -43,7 +43,7 @@ export default function Sidebar() {
             <span
               key={index}
               className={
-                "py-1 px-3 bg-caribbean-current/15 dark:bg-turquoise/30 backdrop-blur-sm border border-caribbean-current dark:border-turquoise text-caribbean-current dark:text-turquoise font-semibold capitalize rounded-xl"
+                "tags"
               }
             >
               {tag}
