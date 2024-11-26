@@ -1,44 +1,31 @@
-import project1mainImg from "../assets/images/projects/all/1.webp";
-import project1detailImg1 from "../assets/images/projects/project-1/1.webp";
-import project1detailImg2 from "../assets/images/projects/project-1/1.webp";
-import project1detailImg3 from "../assets/images/projects/project-1/1.webp";
-import project1detailImg4 from "../assets/images/projects/project-1/1.webp";
-import project1detailImg5 from "../assets/images/projects/project-1/1.webp";
-import project1detailImg6 from "../assets/images/projects/project-1/1.webp";
 import react from "../assets/images/Tools/react.svg";
 import next from "../assets/images/Tools/next.svg";
 import laravel from "../assets/images/Tools/laravel.svg";
 import node from "../assets/images/Tools/node.svg";
 import shadcn from "../assets/images/Tools/shadcn.svg";
 import tailwind from "../assets/images/Tools/tailwind.svg";
-import project1screen1 from "../assets/images/projects/project-1/screens/1.webp";
-import project1screen2 from "../assets/images/projects/project-1/screens/2.webp";
-import project1screen3 from "../assets/images/projects/project-1/screens/3.webp";
-import project1screen4 from "../assets/images/projects/project-1/screens/4.webp";
-import project1screen5 from "../assets/images/projects/project-1/screens/5.webp";
-import project1screen6 from "../assets/images/projects/project-1/screens/6.webp";
-import project1screen7 from "../assets/images/projects/project-1/screens/7.webp";
-import project1screen8 from "../assets/images/projects/project-1/screens/8.webp";
+import framerMotion from "../assets/images/Tools/framer-motion.svg";
+import gsap from "../assets/images/Tools/gsap.svg";
 
 export const projects = [
   {
     id: 1,
-    mainImag: project1mainImg,
+    mainImag: "/src/assets/images/projects/project-1/main.webp",
     title: "Best Website for Best Portland Cleaners",
     tags: ["Standard Website", "Standard Plan", "Mini Dashboard"],
     detailsImgs: [
-      project1detailImg1,
-      project1detailImg2,
-      project1detailImg3,
-      project1detailImg4,
-      project1detailImg5,
-      project1detailImg6,
+      "/src/assets/images/projects/project-1/details/1.webp",
+      "/src/assets/images/projects/project-1/details/2.webp",
+      "/src/assets/images/projects/project-1/details/3.webp",
+      "/src/assets/images/projects/project-1/details/4.webp",
+      "/src/assets/images/projects/project-1/details/5.webp",
+      "/src/assets/images/projects/project-1/details/6.webp",
     ],
     client: "Best Porland Cleaners",
     date: "15/07/2025",
     category: "Standard website",
     plan: "Standard (PLAN 2)",
-    link: "google.com",
+    link: "https://bestportlandcleaners.vercel.app/",
     about:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error placeat architecto optio praesentium fuga delectus dolorum voluptas similique quam quod repellat sequi eveniet exercitationem, libero perferendis, minima debitis eos, quas nostrum veritatis. Doloribus cupiditate vitae aut sequi nihil quia delectus? Error placeat architecto optio praesentium fuga delectus dolorum voluptas similique quam quod repellat sequi eveniet exercitationem, libero perferendis, minima debitis eos, quas nostrum veritatis. Doloribus cupiditate vitae aut sequi nihil quia delectus?",
     tools: {
@@ -52,6 +39,10 @@ export const projects = [
         {
           logo: tailwind,
           name: "Tailwind",
+        },
+        {
+          logo: framerMotion,
+          name: "Framer Motion",
         },
         {
           logo: shadcn,
@@ -77,35 +68,33 @@ export const projects = [
       parag:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error placeat architecto optio praesentium fuga delectus dolorum voluptas.",
       screens: [
-        project1screen1,
-        project1screen2,
-        project1screen3,
-        project1screen4,
-        project1screen5,
-        project1screen6,
-        project1screen7,
-        project1screen8,
+        "/src/assets/images/projects/project-1/screens/1.webp",
+        "/src/assets/images/projects/project-1/screens/2.webp",
+        "/src/assets/images/projects/project-1/screens/3.webp",
+        "/src/assets/images/projects/project-1/screens/4.webp",
+        "/src/assets/images/projects/project-1/screens/5.webp",
+        "/src/assets/images/projects/project-1/screens/6.webp",
+        "/src/assets/images/projects/project-1/screens/7.webp",
+        "/src/assets/images/projects/project-1/screens/8.webp",
       ],
     },
   },
   {
     id: 2,
-    mainImag: project1mainImg,
-    title: "Best Website for Best Portland Cleaners",
-    tags: ["Standard Website", "Standard Plan", "Mini Dashboard"],
+    mainImag: "/src/assets/images/projects/project-2/main.webp",
+    title: "Landing Page for Budget Window Cleaning",
+    tags: ["Landing Page", "Basic Plan"],
     detailsImgs: [
-      project1detailImg1,
-      project1detailImg2,
-      project1detailImg3,
-      project1detailImg4,
-      project1detailImg5,
-      project1detailImg6,
+      "/src/assets/images/projects/project-2/details/1.webp",
+      "/src/assets/images/projects/project-2/details/2.webp",
+      "/src/assets/images/projects/project-2/details/3.webp",
+      "/src/assets/images/projects/project-2/details/4.webp",
     ],
-    client: "Best Porland Cleaners",
+    client: "Budget Window Cleaning",
     date: "15/07/2025",
-    category: "Standard website",
-    plan: "Standard (PLAN 2)",
-    link: "google.com",
+    category: "Landing Page",
+    plan: "Basic (PLAN 1)",
+    link: "https://budget-window-cleaning.vercel.app/",
     about:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error placeat architecto optio praesentium fuga delectus dolorum voluptas similique quam quod repellat sequi eveniet exercitationem, libero perferendis, minima debitis eos, quas nostrum veritatis. Doloribus cupiditate vitae aut sequi nihil quia delectus? Error placeat architecto optio praesentium fuga delectus dolorum voluptas similique quam quod repellat sequi eveniet exercitationem, libero perferendis, minima debitis eos, quas nostrum veritatis. Doloribus cupiditate vitae aut sequi nihil quia delectus?",
     tools: {
@@ -121,12 +110,8 @@ export const projects = [
           name: "Tailwind",
         },
         {
-          logo: shadcn,
-          name: "ShadCN",
-        },
-        {
-          logo: node,
-          name: "Node Js",
+          logo: framerMotion,
+          name: "Framer Motion",
         },
       ],
     },
@@ -144,35 +129,33 @@ export const projects = [
       parag:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error placeat architecto optio praesentium fuga delectus dolorum voluptas.",
       screens: [
-        project1screen1,
-        project1screen2,
-        project1screen3,
-        project1screen4,
-        project1screen5,
-        project1screen6,
-        project1screen7,
-        project1screen8,
+        "/src/assets/images/projects/project-2/screens/1.webp",
+        "/src/assets/images/projects/project-2/screens/2.webp",
+        "/src/assets/images/projects/project-2/screens/3.webp",
+        "/src/assets/images/projects/project-2/screens/4.webp",
+        "/src/assets/images/projects/project-2/screens/5.webp",
+        "/src/assets/images/projects/project-2/screens/6.webp",
+        "/src/assets/images/projects/project-2/screens/7.webp",
       ],
     },
   },
   {
     id: 3,
-    mainImag: project1mainImg,
-    title: "Best Website for Best Portland Cleaners",
-    tags: ["Standard Website", "Standard Plan", "Mini Dashboard"],
+    mainImag: "/src/assets/images/projects/project-3/main.webp",
+    title: "Landing Page for Best Portland Cleaners",
+    tags: ["Landing Page", "Basic Plan"],
     detailsImgs: [
-      project1detailImg1,
-      project1detailImg2,
-      project1detailImg3,
-      project1detailImg4,
-      project1detailImg5,
-      project1detailImg6,
+      "/src/assets/images/projects/project-3/details/1.webp",
+      "/src/assets/images/projects/project-3/details/2.webp",
+      "/src/assets/images/projects/project-3/details/3.webp",
+      "/src/assets/images/projects/project-3/details/4.webp",
+      "/src/assets/images/projects/project-3/details/5.webp",
     ],
-    client: "Best Porland Cleaners",
+    client: "Charlotte's Ultimate Cleaning",
     date: "15/07/2025",
-    category: "Standard website",
-    plan: "Standard (PLAN 2)",
-    link: "google.com",
+    category: "Landing Page",
+    plan: "Basic (PLAN 1)",
+    link: "https://charlotte-ultimate.vercel.app/",
     about:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error placeat architecto optio praesentium fuga delectus dolorum voluptas similique quam quod repellat sequi eveniet exercitationem, libero perferendis, minima debitis eos, quas nostrum veritatis. Doloribus cupiditate vitae aut sequi nihil quia delectus? Error placeat architecto optio praesentium fuga delectus dolorum voluptas similique quam quod repellat sequi eveniet exercitationem, libero perferendis, minima debitis eos, quas nostrum veritatis. Doloribus cupiditate vitae aut sequi nihil quia delectus?",
     tools: {
@@ -180,20 +163,16 @@ export const projects = [
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error placeat architecto optio praesentium fuga delectus dolorum voluptas similique quam quod repellat sequi eveniet exercitationem, libero perferendis, minima debitis eos, quas nostrum veritatis.",
       frameworks: [
         {
-          logo: react,
-          name: "React Js",
+          logo: next,
+          name: "Next Js",
         },
         {
           logo: tailwind,
           name: "Tailwind",
         },
         {
-          logo: shadcn,
-          name: "ShadCN",
-        },
-        {
-          logo: node,
-          name: "Node Js",
+          logo: gsap,
+          name: "Gsap",
         },
       ],
     },
@@ -211,14 +190,82 @@ export const projects = [
       parag:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error placeat architecto optio praesentium fuga delectus dolorum voluptas.",
       screens: [
-        project1screen1,
-        project1screen2,
-        project1screen3,
-        project1screen4,
-        project1screen5,
-        project1screen6,
-        project1screen7,
-        project1screen8,
+        "/src/assets/images/projects/project-3/screens/1.webp",
+        "/src/assets/images/projects/project-3/screens/2.webp",
+        "/src/assets/images/projects/project-3/screens/3.webp",
+        "/src/assets/images/projects/project-3/screens/4.webp",
+        "/src/assets/images/projects/project-3/screens/5.webp",
+        "/src/assets/images/projects/project-3/screens/6.webp",
+      ],
+    },
+  },
+  {
+    id: 4,
+    mainImag: "/src/assets/images/projects/project-4/main.webp",
+    title: "Best Website for Diamond Bright",
+    tags: ["Standard Website", "Standard Plan", "Mini Dashboard"],
+    detailsImgs: [
+      "/src/assets/images/projects/project-4/details/1.webp",
+      "/src/assets/images/projects/project-4/details/2.webp",
+      "/src/assets/images/projects/project-4/details/3.webp",
+      "/src/assets/images/projects/project-4/details/4.webp",
+      "/src/assets/images/projects/project-4/details/5.webp",
+      "/src/assets/images/projects/project-4/details/6.webp",
+    ],
+    client: "Diamond Bright",
+    date: "15/07/2025",
+    category: "Standard website",
+    plan: "Standard (PLAN 2)",
+    link: "https://diamond-bright.vercel.app/",
+    about:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error placeat architecto optio praesentium fuga delectus dolorum voluptas similique quam quod repellat sequi eveniet exercitationem, libero perferendis, minima debitis eos, quas nostrum veritatis. Doloribus cupiditate vitae aut sequi nihil quia delectus? Error placeat architecto optio praesentium fuga delectus dolorum voluptas similique quam quod repellat sequi eveniet exercitationem, libero perferendis, minima debitis eos, quas nostrum veritatis. Doloribus cupiditate vitae aut sequi nihil quia delectus?",
+    tools: {
+      parag:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error placeat architecto optio praesentium fuga delectus dolorum voluptas similique quam quod repellat sequi eveniet exercitationem, libero perferendis, minima debitis eos, quas nostrum veritatis.",
+      frameworks: [
+        {
+          logo: next,
+          name: "Next Js",
+        },
+        {
+          logo: tailwind,
+          name: "Tailwind",
+        },
+        {
+          logo: shadcn,
+          name: "ShadCN",
+        },
+        {
+          logo: node,
+          name: "Node Js",
+        },
+        {
+          logo: gsap,
+          name: "Gsap",
+        },
+      ],
+    },
+    features: {
+      parag:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error placeat architecto optio praesentium fuga delectus dolorum voluptas similique :",
+      list: [
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quidem aut dolorum minus sit aspernatur error nisi obcaecati reiciendis.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quidem aut dolorum minus sit aspernatur error nisi obcaecati reiciendis, mollitia dolore? Repellendus necessitatibus, iure vero mollitia ab eos laborum quisquam.",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quidem aut dolorum minus sit aspernatur error nisi obcaecati reiciendis, mollitia dolore?",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quidem aut dolorum minus sit aspernatur error nisi obcaecati reiciendis, mollitia dolore? Repellendus necessitatibus, iure vero mollitia ab eos laborum quisquam.",
+      ],
+    },
+    appscreens: {
+      parag:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error placeat architecto optio praesentium fuga delectus dolorum voluptas.",
+      screens: [
+        "/src/assets/images/projects/project-4/screens/1.webp",
+        "/src/assets/images/projects/project-4/screens/2.webp",
+        "/src/assets/images/projects/project-4/screens/3.webp",
+        "/src/assets/images/projects/project-4/screens/4.webp",
+        "/src/assets/images/projects/project-4/screens/5.webp",
+        "/src/assets/images/projects/project-4/screens/6.webp",
+        "/src/assets/images/projects/project-4/screens/7.webp",
       ],
     },
   },

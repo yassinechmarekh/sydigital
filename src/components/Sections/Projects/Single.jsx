@@ -26,7 +26,7 @@ export default function Single() {
           >
             {project.detailsImgs.map((item, index) => (
               <SwiperSlide key={index}>
-                <img src={item} alt="" className="w-full md:w-4/5 mx-auto" />
+                <img src={item} alt="" className="w-full md:w-4/5 mx-auto select-none" />
               </SwiperSlide>
             ))}
           </Swiper>
@@ -90,7 +90,7 @@ export default function Single() {
           </div>
         </div>
         <div className="mt-10 flex flex-col gap-y-6">
-          <Link to={project.link}>
+          <Link to={project.link} target="_blank">
             <motion.div
               whileTap={{ scale: 0.9 }}
               className={"main-btn mx-auto flex items-center gap-3"}
@@ -119,7 +119,7 @@ export default function Single() {
             </h2>
             <p className={"parag mt-2"}>{project.tools.parag}</p>
             <div
-              className={"grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-0 my-8"}
+              className={"grid grid-cols-2 sm:grid-cols-4 gap-6 my-8"}
             >
               {project.tools.frameworks.map((item, index) => (
                 <div key={index} className="flex flex-col gap-y-2 items-center">
@@ -199,7 +199,7 @@ export default function Single() {
               </Swiper>
             </div>
           </div>
-          <Link to={project.link}>
+          <Link to={project.link} target="_blank">
             <motion.div
               whileTap={{ scale: 0.9 }}
               className={"main-btn mx-auto flex items-center gap-3"}
