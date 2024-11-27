@@ -6,18 +6,18 @@ export default function Main() {
   const steps = [
     {
       id: 1,
-      title: "We'll ask key questions",
-      description: "We are hyper-efficient at synthesizing your core needs.",
+      title: "Complete the Form",
+      description: "Fill out the appointment form with your details and project requirements. We’ll review your information and get back to you shortly.",
     },
     {
       id: 2,
-      title: "We'll draft a proposal",
-      description: "We can harness the expertise of our local + global team.",
+      title: "Our Team Will Contact You",
+      description: "Once we receive your form, our expert team will reach out to you to discuss your project and answer any questions.",
     },
     {
       id: 3,
-      title: "We'll present the plan",
-      description: "We will show you how to turnideas into scalable action.",
+      title: "Relax and Let Us Handle the Rest",
+      description: "After confirming the details, sit back and relax while we work on your project. We're here to make your vision a reality.",
     },
   ];
   return (

@@ -44,9 +44,8 @@ const Why = () => {
       <div className="container">
         <TopSection
           subtitle="Why Choose Us"
-          title="Tailored Solutions, Proven Results, and Exceptional Service"
-          parag="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum dolor
-        dicta tempora non. Eaque, optio!"
+          title="Your Trusted Partner in Building Successful Websites"
+          parag="We focus on creating websites that not only look stunning but also deliver real, measurable results. Our team combines cutting-edge design with proven strategies to help your brand stand out and achieve digital success."
         />
         <div id="whymain" className={"mt-10"}>
           <div id="complexwhy">
@@ -83,7 +82,7 @@ const Why = () => {
 
       <img src="./world.png" id="wrd" />
 
-      <img src="./particle3pr.png" id="wrd2" />
+      {/* <img src="./particle3pr.png" id="wrd2" /> */}
       <img src="./particle1.png" id="wrd3" />
       <img src={logoWhite} id="wrd4" className="hidden dark:block" />
       <img src={logoDark} id="wrd5" className="block dark:hidden" />

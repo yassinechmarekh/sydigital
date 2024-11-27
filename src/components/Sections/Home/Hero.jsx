@@ -82,8 +82,10 @@ export default function Hero() {
               transition={{ duration: 1, delay: 0.5 }}
               className={"text-slate-600 dark:text-slate-300"}
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-              ea perferendis mollitia necessitatibus nam consequuntur?
+              At SyDigital, we craft custom websites that are not only visually
+              appealing but also optimized to drive results. Our team designs
+              websites tailored to your brand’s needs, helping you thrive in the
+              competitive online world.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, x: -100 }}

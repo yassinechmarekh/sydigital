@@ -1,7 +1,7 @@
 import React from "react";
 
 // eslint-disable-next-line react/prop-types
-const Servicecard = ({ servicename, imagechara }) => {
+const Servicecard = ({ service }) => {
   const tags = [
     "lijablah wnzid wnzid",
     "lijablah wnzid",
@@ -13,25 +13,25 @@ const Servicecard = ({ servicename, imagechara }) => {
     <div className="cardservice bg-turquoise/10 dark:bg-turquoise/20 backdrop-filter backdrop-blur-sm rounded-lg border border-caribbean-current dark:border-turquoise p-8 hover:bg-turquoise/30 transition-all duration-300 cursor-pointer">
       <div className="cardservicetext">
         <h2 className="font-title text-4xl font-bold text-caribbean-current dark:text-white capitalize">
-          {servicename}
+          {service.title}
         </h2>
         <div className="lijablahcontainer font-subtitle">
-          {tags.map((item, index) => (
-            <div key={index} className="tags">{item}</div>
+          {service.tags.map((item, index) => (
+            <div key={index} className="tags">
+              {item}
+            </div>
           ))}
         </div>
 
         <p className="parag">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat non
-          quibusdam eos ducimus, vitae magnam aut quos libero sapiente
-          voluptatum unde qui illum.{" "}
+          {service.description}
         </p>
         <div className="cardservbtn  bg-turquoise font-bold text-gunmetal">
           Get a Free Quote
         </div>
       </div>
       <div className="cardserviceimg">
-        <img src={imagechara} alt="" className="imagecharacard" />
+        <img src={service.imagechara} alt="" className="imagecharacard" />
         <img src="./starelement.png" alt="" className="starelement1" />
         <img src="./arrowelement.png" alt="" className="starelement2" />
         <img src="./starelement2.png" alt="" className="starelement3" />

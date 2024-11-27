@@ -13,9 +13,8 @@ export default function Team() {
       <div className="container">
         <TopSection
           subtitle="Our Team"
-          title="Tailored Solutions, Proven Results, and Exceptional Service"
-          parag="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum dolor
-        dicta tempora non. Eaque, optio!"
+          title="Experts Dedicated to Your Success"
+          parag="Our talented team combines design, development, and strategy to create websites that drive results. We focus on delivering high-quality digital solutions that help your business thrive."
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 mt-8">
           <motion.div

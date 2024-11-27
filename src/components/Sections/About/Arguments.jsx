@@ -15,7 +15,7 @@ export default function Arguments() {
       subtitle: "Argument 1",
       title: "Empowering Businesses Through Modern Design",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam explicabo vitae quia minus aspernatur non culpa officiis commodi et. Corrupti dicta odit ab quibusdam sint voluptas adipisci fugiat architecto soluta.",
+        "We design websites with a focus on user experience, modern aesthetics, and functionality. Our goal is to create digital experiences that drive growth and elevate your brand in a competitive market.",
     },
     {
       id: 2,
@@ -23,7 +23,7 @@ export default function Arguments() {
       subtitle: "Argument 2",
       title: "Websites Built to Convert and Impress",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam explicabo vitae quia minus aspernatur non culpa officiis commodi et. Corrupti dicta odit ab quibusdam sint voluptas adipisci fugiat architecto soluta.",
+        "Our websites are crafted with conversion in mind, ensuring that every page is designed to engage visitors and turn them into customers. We use best practices in SEO, design, and performance to build websites that truly deliver results.",
     },
     {
       id: 3,
@@ -31,7 +31,7 @@ export default function Arguments() {
       subtitle: "Argument 3",
       title: "Your Trusted Partner in Digital Growth",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam explicabo vitae quia minus aspernatur non culpa officiis commodi et. Corrupti dicta odit ab quibusdam sint voluptas adipisci fugiat architecto soluta.",
+        "We work closely with you to understand your goals and deliver custom solutions tailored to your needs. With SyDigital, you’ll have a trusted partner every step of the way, from concept to launch and beyond.",
     },
   ];
   return (
@@ -39,9 +39,8 @@ export default function Arguments() {
       <div className="container">
         <TopSection
           subtitle="Why SyDigital ?"
-          title="Tailored Solutions, Proven Results, and Exceptional Service"
-          parag="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum dolor
-        dicta tempora non. Eaque, optio!"
+          title="Your Partner for Success in the Digital World"
+          parag="We combine innovation, design, and strategy to help businesses grow and succeed online. Our expert team is dedicated to delivering websites that not only look great but also achieve measurable results."
         />
         <div className="mt-8 flex flex-col gap-y-8 lg:gap-y-0">
           {ourarguments.map((item) => (
@@ -66,7 +65,7 @@ export default function Arguments() {
                   initial={{ opacity: 0, x: item.id % 2 === 0 ? 5 : -5 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: 0.3 }}
-                  className={"text-3xl text-gunmetal dark:text-white font-semibold"}
+                  className={"mt-1 text-3xl text-gunmetal dark:text-white font-semibold"}
                 >
                   {item.title}
                 </motion.h1>

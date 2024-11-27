@@ -61,20 +61,19 @@ const Serviceshero = () => {
   }, []);
   return (
     <div id="servicehero" className="container">
-      <div id="serviceherotxt" >
+      <div id="serviceherotxt">
         <div className="sub-title w-fit">WE HELP YOU TO GROW ONLINE</div>
-        <h2 className="title mt-2">
-          Creating Cultires Of Engagement
-        </h2>
+        <h2 className="title mt-2">Creating Cultires Of Engagement</h2>
         <p className="parag">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-          nulla perferendis nisi dolore nesciunt natus voluptates nihil.
+          We design and develop websites that foster strong connections with
+          your audience, helping your business grow in the digital world. Our
+          approach is centered on engagement, performance, and results.
         </p>
         <Separator id="separhero1" />
         <div id="serviceherocardscont">
           <Serviceherocard
-            paraservcard="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sapiente modi libero dolores iure animi ducimus rerum."
-            titleservcard="Web Developement"
+            paraservcard="We create custom websites to showcase your brand and boost your online presence."
+            titleservcard="Small Projects"
             iconser={
               <AppWindowMac
                 id="iconserv"
@@ -83,8 +82,8 @@ const Serviceshero = () => {
             }
           />
           <Serviceherocard
-            paraservcard="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sapiente modi libero dolores iure animi ducimus rerum."
-            titleservcard="Desktop Application"
+            paraservcard="We offer scalable, cost-effective web solutions that help startups stand out and grow online."
+            titleservcard="Startups"
             iconser={
               <MonitorCheck
                 id="iconserv"

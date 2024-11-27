@@ -11,21 +11,21 @@ export default function WorkProcess() {
       id: 1,
       title: "complete our appointment form",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident voluptates, temporibus deserunt exercitationem qui consequuntur.",
+        "Fill out our easy appointment form to get started. This helps us understand your needs and goals, ensuring we’re aligned from the beginning.",
       image: processImg1,
     },
     {
       id: 2,
-      title: "complete our appointment form",
+      title: "Our Team Contacts You",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident voluptates, temporibus deserunt exercitationem qui consequuntur.",
+        "Once we’ve reviewed your form, our team will reach out to discuss your project in detail. We’ll answer any questions and provide expert guidance.",
       image: processImg2,
     },
     {
       id: 3,
-      title: "complete our appointment form",
+      title: "Get Your Project and Relax",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident voluptates, temporibus deserunt exercitationem qui consequuntur.",
+        "After finalizing the details, we’ll deliver your project on time, and you can relax knowing your digital presence is in expert hands.",
       image: processImg3,
     },
   ];
@@ -34,9 +34,8 @@ export default function WorkProcess() {
       <div className="container">
         <TopSection
           subtitle="Our Work Process"
-          title="Tailored Solutions, Proven Results, and Exceptional Service"
-          parag="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum dolor
-        dicta tempora non. Eaque, optio!"
+          title="Efficient, Collaborative, and Tailored to You"
+          parag="We follow a streamlined process to ensure your website is delivered on time, on budget, and to your satisfaction. From the first consultation to the final launch, we’re with you every step of the way."
         />
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-10">
           {process.map((item) => (

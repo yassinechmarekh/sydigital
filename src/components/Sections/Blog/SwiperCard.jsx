@@ -8,7 +8,7 @@ export default function SwiperCard({ blog }) {
         "bg-blue-100 dark:bg-gunmetal border border-gunmetal dark:border-turquoise rounded-xl overflow-hidden"
       }
     >
-      <div className={"h-52 w-full overflow-hidden"}>
+      <div className={"h-60 w-full overflow-hidden"}>
         <Link to={`/blog/${blog.slug}`}>
           <img src={blog.image} alt="" className={"blog-img"} />
         </Link>
