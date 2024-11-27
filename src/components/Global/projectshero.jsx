@@ -39,7 +39,7 @@ const Projectshero = () => {
                 <img src="./character2.png" id='characterprojectshero' alt=""  />
 
 <div id='overl'>
-<img src='../src/assets/logo/white-logo.svg' id='logoover'/>
+<img src='./white-logo.svg' id='logoover'/>
 
 </div>
             </div>
