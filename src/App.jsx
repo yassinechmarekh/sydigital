@@ -15,6 +15,7 @@ import Policy from "./Pages/Policy";
 import Singleproject from "./pages/singleproject";
 import Projectspg from "./Pages/Projects";
 import ProjectSingle from "./Pages/ProjectSingle";
+import NotFound from "./Pages/NotFound";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -43,8 +44,8 @@ function App() {
           <Route path="/appointment" element={<Appointment />} />
           <Route path="/project-info" element={<ProjectInfo />} />
           <Route path="/privacy-policy" element={<Policy />} />
-          {/* <Route path="/project/:id" element={<Singleproject />} /> */}
           <Route path="/project/:id" element={<ProjectSingle />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </BrowserRouter>
