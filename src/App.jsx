@@ -5,7 +5,7 @@ import Header from "./components/Global/Header";
 import Footer from "./components/Global/Footer";
 import About from "./Pages/About";
 import Services from "./Pages/Services";
-
+import { Toaster } from "@/components/ui/toaster"
 import Blogs from "./Pages/Blogs";
 import Contact from "./Pages/Contact";
 import SingleBlog from "./Pages/SingleBlog";
@@ -14,6 +14,7 @@ import ProjectInfo from "./Pages/ProjectInfo";
 import Policy from "./Pages/Policy";
 import Singleproject from "./pages/singleproject";
 import Projectspg from "./Pages/Projects";
+import ProjectSingle from "./Pages/ProjectSingle";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -28,6 +29,7 @@ function ScrollToTop() {
 function App() {
   return (
     <main className={"bg-blue-100 dark:bg-gunmetal"}>
+        <Toaster />
       <BrowserRouter>
         <ScrollToTop />
         <Header />
@@ -42,10 +44,12 @@ function App() {
           <Route path="/appointment" element={<Appointment />} />
           <Route path="/project-info" element={<ProjectInfo />} />
           <Route path="/privacy-policy" element={<Policy />} />
-          <Route path="/project/:id" element={<Singleproject />} />
+          {/* <Route path="/project/:id" element={<Singleproject />} /> */}
+          <Route path="/project/:id" element={<ProjectSingle />} />
         </Routes>
         <Footer />
       </BrowserRouter>
+   
     </main>
   );
 }

@@ -1,8 +1,9 @@
-import React, { useEffect } from 'react';
-import { Separator } from '../ui/separator';
-import "./projectspage.css"
-import gsap from 'gsap';
+import React, { useEffect } from "react";
+import { Separator } from "../ui/separator";
+import "./projectspage.css";
+import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import logo from '@/assets/images/logo/white-logo.svg'
 const Projectshero = () => {
     gsap.registerPlugin(ScrollTrigger);
     useEffect(()=>{
@@ -44,8 +45,15 @@ const Projectshero = () => {
 </div>
             </div>
 
+      <div id="heroprojectsimgs">
+        <img src="./character2.png" id="characterprojectshero" alt="" />
+
+        <div id="overl">
+          <img src={logo} id="logoover" />
         </div>
-    );
-}
+      </div>
+    </div>
+  );
+};
 
 export default Projectshero;

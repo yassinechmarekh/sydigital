@@ -55,15 +55,15 @@
         z-index: 2;
       }
       
-      .categories:before {
+      /* .categories:before {
         left: 0;
         background: linear-gradient(to left, rgba(255, 255, 255, 0), #237379);
-      }
+      } */
       
-      .categories:after {
+      /* .categories:after {
         right: 0;
         background: linear-gradient(to right, rgba(255, 255, 255, 0), #142532);
-      }
+      } */
       
       .categories:hover .categories-slide {
         animation-play-state: paused;
@@ -79,7 +79,7 @@
         margin: 0 10px;
       }
       #catsection{
-        padding: 10px 0px;
+        margin: 10px 0px;
         
     }
       .categorydv span{

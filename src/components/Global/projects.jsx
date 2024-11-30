@@ -1,51 +1,28 @@
-import React, { useEffect, useState } from 'react';
-import Projetcard from './projetcard';
-const projects = [
-  {
-    id: 1,
-    title: "Charlotte's Ultimate Cleaning",
-    description: "Charlotte's Ultimate Cleaning's website offers a clean, user-friendly design with service details, pricing, testimonials, and contact informations .",
-    image: "./charlottethum.png",
-  },
-  {
-    id: 2,
-    title: "Diamond Bright Cleaning",
-    description: "Diamond Bright Cleaning's website offers easy booking, service details, and a dashboard for managing messages and confirmations efficiently.",
-    image: "./charlottethum.png",  
-  },
-  {
-    id: 3,
-    title: "Best Portland Cleaning",
-    description: "Best Portland Cleaning's website combines a modern design with functionality, featuring a mini dashboard for managing messages, bookings, and confirmations efficiently.",
-    image: "./charlottethum.png",
-  },
-  {
-    id: 4,
-    title: "Corporate Intranet",
-    description: "A secure, feature-rich intranet solution for internal communication and document management.",
-    image: "./charlottethum.png",
-
-  }
-]
+import React, { useEffect, useState } from "react";
+import Projetcard from "./projetcard";
+import TopSection from "./TopSection";
+import { projects } from "@/data/Projects";
+import Card from "../Sections/Projects/Card";
 const Projects = () => {
-  const[contentcards,setcardscnt]=useState()
-  useEffect(()=>{
-    const cardss=projects.map(data=>{
-      return  <Projetcard title={data.title} image={data.image} id={data.id} key={data.id} para={data.description}/>
-    })
-    setcardscnt(cardss)
-  },[])
   return (
-    <section className="py-16 px-4 bg-blue-100 dark:bg-gunmetal">
-  
-      <div className=" mx-auto">
-        <h2 className="text-4xl font-title font-bold text-center mb-12 text-gunmetal dark:text-white">Our Showcase Projects</h2>
-        <div className="orjctcardcont">
-      {contentcards}
+    <section className="py-10 px-4 bg-blue-100 dark:bg-gunmetal">
+      <div className="container">
+        <TopSection
+          subtitle="Our Showcase Projects"
+          title="Tailored Solutions, Proven Results, and Exceptional Service"
+          parag="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum dolor
+        dicta tempora non. Eaque, optio!"
+        />
+        <div className="mt-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+            {projects.map((project) => (
+              <Card key={project.id} project={project} />
+            ))}
+          </div>
         </div>
       </div>
     </section>
   );
-}
+};
 
 export default Projects;

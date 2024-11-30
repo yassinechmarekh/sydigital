@@ -44,16 +44,26 @@
   .swp-button-next {
     @apply bg-caribbean-current dark:bg-turquoise text-white p-1 rounded-xl text-4xl absolute top-1/2 -translate-y-1/2 cursor-pointer transition-all duration-300 ease-in-out z-10 !important;
   }
-  .blog-img{
+  .blog-img {
     @apply w-full object-cover object-center hover:scale-105 transition-all duration-300 ease-in-out;
   }
-  .blog-title{
+  .blog-title {
     @apply text-gunmetal dark:text-white hover:text-caribbean-current dark:hover:text-turquoise font-semibold hover:underline transition-all duration-300 ease-in-out;
   }
-  .blog-tag{
+  .blog-tag {
     @apply absolute bottom-3 left-3 py-1 px-2 text-white dark:text-gunmetal text-xs font-semibold capitalize bg-caribbean-current dark:bg-turquoise rounded-sm;
   }
-  .label{
+  .label {
     @apply text-gunmetal dark:text-white capitalize group-focus-within:text-caribbean-current dark:group-focus-within:text-turquoise;
+  }
+  .tags {
+    @apply py-1 px-3 bg-caribbean-current/15 dark:bg-turquoise/30 backdrop-blur-sm border border-caribbean-current dark:border-turquoise text-caribbean-current dark:text-turquoise font-semibold capitalize rounded-xl;
+  }
+  .project-swp .swiper-button-prev:after,
+  .project-swp .swiper-button-next:after {
+    @apply text-white md:text-caribbean-current dark:md:text-turquoise text-sm sm:text-2xl lg:text-3xl bg-caribbean-current dark:bg-turquoise md:bg-transparent md:dark:bg-transparent p-1 sm:p-2 md:p-0 rounded-xl md:rounded-none;
+  }
+  .screens-swp .swiper-pagination-bullet{
+    @apply bg-caribbean-current dark:bg-turquoise !important;
   }
 }

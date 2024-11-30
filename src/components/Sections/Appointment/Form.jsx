@@ -1,12 +1,32 @@
 import MyInput from "@/components/Global/Form/MyInput";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Label } from "@/components/ui/label";
 import MySelect from "@/components/Global/Form/MySelect";
 import Mycheckbox from "@/components/Global/Form/Mycheckbox";
 import MyTextarea from "@/components/Global/Form/MyTextarea";
 import AcceptOurCondition from "@/components/Global/AcceptOurCondition";
+import axios from "axios";
+import { useToast } from "@/hooks/use-toast";
 
 export default function Form() {
+
+  const [planprime, setprimeplan] = useState("")
+  const [contentrequir,setcontentrequir]=useState("")
+  const { toast } = useToast()
+  const[diabledbtn,setdosabledbtn]=useState(false)
+
+  const [checkedPages, setCheckedPages] = useState({
+    Home: false,
+    About: false,
+    Services: false,
+    Contact: false,
+    Appointment: false,
+    Works: false,
+    "FAQ's": false,
+    "Privacy Policy": false,
+    Other: false, // For the "Other" checkbox
+  });
+  const [otherslist, setOtherlists] = useState("")
   const plans = [
     "Basic Plan - $150",
     "Standard Plan - $250",
@@ -23,6 +43,48 @@ export default function Form() {
     "Privacy Policy",
   ];
   const [showInputOther, setShowInputOther] = useState(false);
+  const [formdata2, setformdata2] = useState({
+    name: "",
+    companyname: "",
+    email: "",
+    plan: "",
+    message: "",
+  })
+  const handleChange = (e) => {
+    const { name, value } = e.target
+    setformdata2(prevData => ({
+      ...prevData,
+      [name]: value
+    }))
+  }
+
+  const sbmt = async (pagess) => {
+    const respo = await axios.post(`${import.meta.env.VITE_LINK_API}/appointment/add`, {
+      name: formdata2.name,
+      companyname: formdata2.companyname,
+      email: formdata2.email,
+      plan: formdata2.plan,
+      message: formdata2.message,
+      pages: pagess
+    }, {
+      headers: {
+        "Content-Type": "application/json",
+      }
+    }).then(res=>res.data).then(data=>{
+      console.log(data.message)
+      toast({
+        description: "we received your appointment , our team will response you as soon as possible : ",
+      })
+      setdosabledbtn(false)
+    }).catch(err=>{
+      toast({
+        description: "probleme : ",
+      })
+      setdosabledbtn(false)
+      console.log(err.message)
+    })
+  }
+ 
   return (
     <div>
       <h2
@@ -38,13 +100,15 @@ export default function Form() {
             <Label htmlFor="name" className={"label"}>
               Name
             </Label>
-            <MyInput placeholder="Your Name" type="text" id="name" />
+            <MyInput placeholder="Your Name " required={true}
+              value={formdata2.name} name={"name"} onChange={handleChange}
+              type="text" id="name" />
           </div>
           <div className="w-full sm:w-1/2 group flex flex-col gap-y-2">
             <Label htmlFor="email" className={"label"}>
               Email
             </Label>
-            <MyInput placeholder="Your Email" type="email" id="email" />
+            <MyInput placeholder="Your Email" required={true} value={formdata2.email} name={"email"} onChange={handleChange} type="email" id="email" />
           </div>
         </div>
         <div className="group flex flex-col gap-y-2">
@@ -55,6 +119,8 @@ export default function Form() {
             placeholder="Name of your Company"
             type="text"
             id="company_name"
+            required={true}
+            value={formdata2.companyname} name={"companyname"} onChange={handleChange}
           />
         </div>
         <div className="group flex flex-col gap-y-2">
@@ -64,6 +130,7 @@ export default function Form() {
           <MySelect
             placeholder="Select the plan"
             selectItems={plans}
+            setformdata2={setformdata2}
             id="plan"
           />
         </div>
@@ -73,12 +140,18 @@ export default function Form() {
           </Label>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
             {pages.map((item, index) => (
-              <Mycheckbox key={index} label={item} id={item} />
+              <Mycheckbox key={index} label={item} id={item}
+                setShowInputOther={setShowInputOther} setCheckedPages={setCheckedPages} />
             ))}
             <Mycheckbox
               label="Other"
-              id="other"
+              id="Other"
+
               onChange={(checked) => setShowInputOther(checked)}
+              setShowInputOther={setShowInputOther}
+              setCheckedPages={setCheckedPages}
+
+
             />
           </div>
           {showInputOther && (
@@ -86,6 +159,11 @@ export default function Form() {
               placeholder="Ex: Team, Testimonials"
               type="text"
               id="other_pages"
+              value={otherslist}
+              onChange={(e) => {
+                setOtherlists(e.target.value)
+
+              }}
             />
           )}
         </div>
@@ -93,10 +171,47 @@ export default function Form() {
           <Label htmlFor="message" className={"label"}>
             Message
           </Label>
-          <MyTextarea placeholder="Your Message" id="message" />
+          <MyTextarea placeholder="Your Message" id="message" value={formdata2.message} name={"message"} onChange={handleChange} />
         </div>
         <AcceptOurCondition />
-        <button type="submit" className={"main-btn text-base"}>
+        <span>{contentrequir}</span>
+        <button type="submit" onClick={async(e) => {
+          e.preventDefault()
+          setdosabledbtn(true)
+          if(formdata2.name==""||formdata2.companyname==""||formdata2.plan==""||formdata2.message==""){
+            setdosabledbtn(false)
+            setcontentrequir("You Have To Fill All The Required Fields (*)")
+          }else{
+            const selectedPages = Object.keys(checkedPages).filter(
+              (key) => {
+                if (key != "Other") {
+                  return checkedPages[key] === true
+                }
+              }
+            );
+            if (checkedPages.Other == true) {
+              const othersel = otherslist.split(",")
+              othersel.map(async(data) => {
+               await selectedPages.push(data)
+              })
+  
+            }
+            console.log(formdata2)
+            console.log(selectedPages)
+                    
+        
+            console.log(planprime)
+
+            if(selectedPages.length==0){
+setcontentrequir("You Have To Fill All The Required Fields (*)")
+            }else{
+              await sbmt(selectedPages)
+              setcontentrequir("")
+            }
+         
+          }
+          
+        }} className={"main-btn text-base"} disabled={diabledbtn}>
           Submit
         </button>
       </form>

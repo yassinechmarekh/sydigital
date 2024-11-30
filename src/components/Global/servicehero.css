@@ -1,113 +1,105 @@
-#servicehero{
-justify-content: space-around;
-    display: flex;
+#servicehero {
+  justify-content: space-between;
+  display: flex;
 }
-#serviceherotxt p{
-    width: 80%;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+#serviceherotxt p {
+  width: 80%;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
 }
-#servicesheroimages{
-    width: 40%;
-    position: relative;
-    
-  
-    justify-content: center;
-  
-    
-    display: flex;
-}
-#blob{
-    position: absolute;
-    bottom: 0;
-    width: auto;
-    top: 50%;
-    z-index: 1;
-    left: 50%;
-    transform: translate(-50%, -50%);
+#servicesheroimages {
+  width: 40%;
+  position: relative;
 
-z-index: 0;
-    height: 90%;
-}
-#servicescharahero{
-    z-index: 99;
-    position: relative;
-    
-    width: 80%;
-    height: auto;
-   
-    align-self: self-end;
-}
-#serviceheroheadli{
-    display: inline;
-padding: 5px 10px;
-background-color: rgb(33, 235, 214,.8);
-border-radius: 20px;
-border: 2px solid #21ebd6;
-margin-top: 5vh;
+  justify-content: center;
 
+  display: flex;
 }
-#serviceherotxt{
-    width: 50%;
+#blob {
+  position: absolute;
+  bottom: 0;
+  width: auto;
+  top: 50%;
+  z-index: 1;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: 0;
+  height: 90%;
+}
+#servicescharahero {
+  /* z-index: 99; */
+  position: relative;
+
+  width: 80%;
+  height: auto;
+
+  align-self: self-end;
+}
+#serviceheroheadli {
+  display: inline;
+  padding: 5px 10px;
+  background-color: rgb(33, 235, 214, 0.8);
+  border-radius: 20px;
+  border: 2px solid #21ebd6;
+  margin-top: 5vh;
+}
+#serviceherotxt {
+  width: 50%;
+  align-self: center;
+  margin-top: 8vh;
+}
+#cardsev {
+  width: 40%;
+  display: flex;
+
+  flex-direction: column;
+}
+#serviceherocardscont {
+  display: flex;
+  column-gap: 5%;
+  margin-top: 2vh;
+}
+
+#iconserv {
+  width: 25%;
+  height: auto;
+}
+@media (min-width: 900px) and (max-width: 1024px) {
+  #servicescharahero {
+    width: 100%;
     align-self: center;
-    margin-top: 8vh;
-    
-}
-#cardsev{
-    width: 40%;
-    display: flex;
-
-    flex-direction: column;
-}
-#serviceherocardscont{
-    display: flex;
-    column-gap: 5%;
-    margin-top: 2vh;
-    
-}
-
-#iconserv{
-
- width: 25%;
- height: auto;
-}
-@media (min-width:900px) and (max-width:1024px) {
-    #servicescharahero{
-        width: 100%;
-        align-self: center;
-   
-      }
-}
-@media (min-width:767px) and (max-width:900px) {
-  #servicescharahero{
-width: 70%;
-align-self: center;
   }
-  #servicesheroimages{
+}
+@media (min-width: 767px) and (max-width: 900px) {
+  #servicescharahero {
+    width: 70%;
+    align-self: center;
+  }
+  #servicesheroimages {
     width: 80%;
     align-self: center;
-    
   }
-#servicehero{
+  #servicehero {
     flex-direction: column;
-}
-#serviceherotxt{
+  }
+  #serviceherotxt {
     width: 80%;
-}
+  }
 }
 
-@media (max-width:767px) {
-    #servicehero{
-        flex-direction: column;
-    }
-    #serviceherotxt{
-        width: 98%;
-        margin-left: 1%;
-    }
-    #servicesheroimages{
-        width: 100%;
-    }
-    #cardsev{
-        width: 48%;
-    }
+@media (max-width: 767px) {
+  #servicehero {
+    flex-direction: column;
+  }
+  #serviceherotxt {
+    width: 98%;
+    margin-left: 1%;
+  }
+  #servicesheroimages {
+    width: 100%;
+  }
+  #cardsev {
+    width: 48%;
+  }
 }
