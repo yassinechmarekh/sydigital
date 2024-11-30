@@ -23,7 +23,7 @@ export default function main() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className={"title mt-2"}
             >
-              Let’s connect, say Hi to me.
+              Let’s connect !
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, x: -10 }}
@@ -31,9 +31,10 @@ export default function main() {
               transition={{ duration: 0.5, delay: 0.5 }}
               className={"parag mt-3"}
             >
-              Craft a unique and compelling story that unfolds as users navigate
-              through the contact form. Each step can reveal a new part of the
-              story.
+              We’d love to hear from you! Whether you have questions, need more
+              information, or just want to discuss how we can help your business
+              grow, reach out to us. Our team is ready to assist you with any
+              queries you may have.
             </motion.p>
             <motion.img
               initial={{ opacity: 0, x: -10 }}

@@ -44,14 +44,22 @@ export default function Hero() {
                       key={index}
                       className={"flex flex-col items-center gap-y-1"}
                     >
-                      <h4 className={"text-4xl font-semibold text-caribbean-current dark:text-turquoise"}>
+                      <h4
+                        className={
+                          "text-4xl font-semibold text-caribbean-current dark:text-turquoise"
+                        }
+                      >
                         <CountUp
                           end={item.number}
                           duration={5}
                           suffix={item.suffix}
                         />
                       </h4>
-                      <span className={"text-xl text-gunmetal dark:text-white capitalize"}>
+                      <span
+                        className={
+                          "text-xl text-gunmetal dark:text-white capitalize"
+                        }
+                      >
                         {item.name}
                       </span>
                     </motion.div>
@@ -96,11 +104,10 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.5 }}
               className={"parag mt-4"}
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatum quasi totam dolores quia hic aspernatur quisquam
-              reiciendis itaque doloremque, consequatur similique, officia
-              veniam deserunt consectetur ullam corrupti! Accusantium,
-              voluptatibus eveniet?
+              We’re a team of passionate web developers, designers, and digital
+              strategists dedicated to creating custom websites that drive
+              growth. With years of expertise, we help businesses stand out in a
+              competitive digital world, delivering results that matter.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 5 }}

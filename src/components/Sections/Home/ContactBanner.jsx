@@ -32,8 +32,9 @@ export default function ContactBanner() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className={"parag mt-2"}
             >
-              Effective SEO strategies not only elevate a website's visibility
-              but also drive targeted traffic, enhance user experience.
+              Let’s work together to create a powerful online presence for your
+              brand. At SyDigital, we’re here to turn your ideas into reality
+              with custom websites that drive results.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 5 }}

@@ -13,7 +13,7 @@ export default function Single() {
       <div className="container">
         <div className="flex flex-col lg:flex-row gap-8 mb-6">
           <div className="w-full lg:w-2/3">
-            <div className="sm:h-96 overflow-hidden">
+            <div className="sm:h-[450px] overflow-hidden">
               <img src={blog.image} alt="" className={"blog-img"} />
             </div>
             <h2

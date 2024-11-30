@@ -21,31 +21,31 @@ export default function Pricing() {
       benefits: [
         {
           ischeck: true,
-          text: "Up to 5-7 pages design",
+          text: "One Page",
         },
         {
           ischeck: true,
-          text: "Up to 5-7 pages design",
+          text: "Optimized SEO",
         },
         {
           ischeck: true,
-          text: "Up to 5-7 pages design",
+          text: "Free Domain Name (1 year)",
         },
         {
           ischeck: true,
-          text: "Up to 5-7 pages design",
+          text: "Free Hosting (1 year)",
         },
         {
           ischeck: false,
-          text: "Up to 5-7 pages design",
+          text: "Dashboard",
         },
         {
           ischeck: false,
-          text: "Up to 5-7 pages design",
+          text: "Contact Form",
         },
         {
           ischeck: false,
-          text: "Up to 5-7 pages design",
+          text: "Booking Online",
         },
       ],
       initial: initialLeft,
@@ -59,31 +59,31 @@ export default function Pricing() {
       benefits: [
         {
           ischeck: true,
-          text: "Up to 5-7 pages design",
+          text: "Multiple Pages (min 7 pages)",
         },
         {
           ischeck: true,
-          text: "Up to 5-7 pages design",
+          text: "Optimized SEO",
         },
         {
           ischeck: true,
-          text: "Up to 5-7 pages design",
+          text: "Free Domain Name (1 year)",
         },
         {
           ischeck: true,
-          text: "Up to 5-7 pages design",
+          text: "Free Hosting (1 year)",
         },
         {
           ischeck: true,
-          text: "Up to 5-7 pages design",
+          text: "Mini Dashboard",
         },
         {
-          ischeck: false,
-          text: "Up to 5-7 pages design",
+          ischeck: true,
+          text: "Contact Form",
         },
         {
-          ischeck: false,
-          text: "Up to 5-7 pages design",
+          ischeck: true,
+          text: "Booking Online",
         },
       ],
       initial: initialCenter,
@@ -97,31 +97,31 @@ export default function Pricing() {
       benefits: [
         {
           ischeck: true,
-          text: "Up to 5-7 pages design",
+          text: "Multiple Pages (min 10 pages)",
         },
         {
           ischeck: true,
-          text: "Up to 5-7 pages design",
+          text: "Optimized SEO",
         },
         {
           ischeck: true,
-          text: "Up to 5-7 pages design",
+          text: "Free Domain Name (1 year)",
         },
         {
           ischeck: true,
-          text: "Up to 5-7 pages design",
+          text: "Free Hosting (1 year)",
         },
         {
           ischeck: true,
-          text: "Up to 5-7 pages design",
+          text: "Full Dashboard",
         },
         {
           ischeck: true,
-          text: "Up to 5-7 pages design",
+          text: "Contact Form",
         },
         {
           ischeck: true,
-          text: "Up to 5-7 pages design",
+          text: "Booking Online",
         },
       ],
       initial: initialRight,
@@ -134,8 +134,7 @@ export default function Pricing() {
         <TopSection
           subtitle="Pricing Package"
           title="Premium Web Design Services Without the Premium Price"
-          parag="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum dolor
-        dicta tempora non. Eaque, optio!"
+          parag="We offer flexible pricing packages to suit businesses of all sizes. Whether you're a startup or an established brand, we have a plan that fits your needs and budget."
         />
         <div className={"grid grid-cols-1 lg:grid-cols-3 gap-4 mt-10"}>
           {plans.map((item) => (
@@ -201,7 +200,7 @@ export default function Pricing() {
                     item.id % 2 === 0
                       ? "bg-gunmetal group-hover:bg-turquoise text-turquoise group-hover:text-gunmetal"
                       : "text-gunmetal bg-turquoise group-hover:bg-gunmetal group-hover:text-turquoise"
-                  } rounded-md transition-colors`}
+                  } rounded-md cursor-pointer transition-colors`}
                 >
                   Start Now
                 </Link>

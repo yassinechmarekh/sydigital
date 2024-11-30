@@ -14,21 +14,21 @@ export default function OurServices() {
       icon: landingPageIcon,
       title: "Landing Page",
       description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe illum tenetur animi aliquid possimus modi totam deleniti perspiciatis fugit explicabo.",
+        "We create high-converting landing pages that grab attention, drive results, and increase engagement. Clear, compelling, and optimized for performance.",
     },
     {
       id: 2,
       icon: appIcon,
       title: "Web Application",
       description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe illum tenetur animi aliquid possimus modi totam deleniti perspiciatis fugit explicabo.",
+        "SyDigital builds secure, scalable web applications tailored to your business needs. Reliable solutions that improve user experience and efficiency.",
     },
     {
       id: 3,
       icon: ecommerceIcon,
       title: "Ecommerce Website",
       description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe illum tenetur animi aliquid possimus modi totam deleniti perspiciatis fugit explicabo.",
+        "We design eCommerce websites that are easy to navigate, mobile-friendly, and built to convert visitors into customers, growing your online business.",
     },
   ];
   return (
@@ -36,9 +36,8 @@ export default function OurServices() {
       <div className="container">
         <TopSection
           subtitle="Our Mission"
-          title="Tailored Solutions, Proven Results, and Exceptional Service"
-          parag="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum dolor
-        dicta tempora non. Eaque, optio!"
+          title="Empowering Brands with Custom Websites"
+          parag="Our mission is to build websites that enhance your brand and drive results. We deliver innovative solutions to help businesses grow in the digital world."
         />
         <div className="flex flex-col-reverse md:flex-row items-center gap-4 mt-6">
           <motion.div

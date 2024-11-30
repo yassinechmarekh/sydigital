@@ -74,8 +74,8 @@ export default function FormCard() {
         Get In Touch
       </h3>
       <p className={"text-slate-100 dark:text-slate-300"}>
-        We’re here to help! If you have any questions or would like to discuss
-        how our SEO and digital marketing services can benefit your business,
+        We’re here to help. Drop us a message, and we'll get back to you as soon
+        as possible.
       </p>
       <form className={"flex flex-col gap-y-4"}>
         <div className="flex flex-col sm:flex-row gap-4">

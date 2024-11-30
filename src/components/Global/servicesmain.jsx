@@ -79,29 +79,62 @@ const Servicesmain = () => {
         { y: 0, yoyo: true, repeat: -1, duration: 2 }
       );
   }, []);
+  const services = [
+    {
+      title: "Landing Page",
+      imagechara: "./character3.png",
+      tags: [
+        "landing page design",
+        "high-converting",
+        "SEO optimized",
+        "lead generation",
+        "performance-driven",
+        "responsive design",
+      ],
+      description:
+        "We design high-converting landing pages that grab attention and optimize performance, helping you capture leads and grow your business.",
+    },
+    {
+      title: "Web Application",
+      imagechara: "./character5.png",
+      tags: [
+        "custom web application",
+        "scalable",
+        "performance optimization",
+        "user experience",
+        "business solutions",
+        "responsive web app",
+      ],
+      description:
+        "Our custom web applications are built for performance and scalability, designed to meet your business’s unique requirements and enhance user experience.",
+    },
+    {
+      title: "E-commerce Website",
+      imagechara: "./character2.png",
+      tags: [
+        "e-commerce design",
+        "user-friendly",
+        "online store",
+        "conversion optimization",
+        "mobile-friendly",
+      ],
+      description:
+        "We create user-friendly, secure e-commerce websites that drive sales, improve customer experience, and help your business succeed online.",
+    },
+  ];
   return (
     <main className="py-10 bg-blue-100 dark:bg-gunmetal">
       <div className="container">
         <TopSection
           subtitle="Our Services"
           title="Elevate your digital presence with our cutting-edge solutions"
-          parag="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum dolor
-        dicta tempora non. Eaque, optio!"
+          parag="We offer innovative solutions to enhance your digital presence and drive success. Our services are tailored to meet your specific business needs and objectives."
         />
 
         <div className="servicescardscontainer mt-6">
-          <Servicecard
-            imagechara="./character3.png"
-            servicename="Landing Page"
-          />
-          <Servicecard
-            imagechara="./character5.png"
-            servicename="Web Application"
-          />
-          <Servicecard
-            imagechara="./character2.png"
-            servicename="E-commerce Website"
-          />
+          {services.map((service, index) => (
+            <Servicecard key={index} service={service} />
+          ))}
         </div>
       </div>
     </main>

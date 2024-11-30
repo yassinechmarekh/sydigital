@@ -22,15 +22,15 @@ export const projects = [
       "/src/assets/images/projects/project-1/details/6.webp",
     ],
     client: "Best Porland Cleaners",
-    date: "15/07/2025",
+    date: "02/11/2024",
     category: "Standard website",
     plan: "Standard (PLAN 2)",
     link: "https://bestportlandcleaners.vercel.app/",
     about:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error placeat architecto optio praesentium fuga delectus dolorum voluptas similique quam quod repellat sequi eveniet exercitationem, libero perferendis, minima debitis eos, quas nostrum veritatis. Doloribus cupiditate vitae aut sequi nihil quia delectus? Error placeat architecto optio praesentium fuga delectus dolorum voluptas similique quam quod repellat sequi eveniet exercitationem, libero perferendis, minima debitis eos, quas nostrum veritatis. Doloribus cupiditate vitae aut sequi nihil quia delectus?",
+      "Best Portland Cleaners is an agency offering residential and commercial cleaning services. We developed a multi-page website to showcase their services and information, featuring a modern and interactive design. The site is fully responsive across all devices. Additionally, we implemented a user-friendly appointment form and a mini admin dashboard for managing client bookings efficiently.",
     tools: {
       parag:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error placeat architecto optio praesentium fuga delectus dolorum voluptas similique quam quod repellat sequi eveniet exercitationem, libero perferendis, minima debitis eos, quas nostrum veritatis.",
+        "To ensure a seamless and efficient development process, we utilized modern tools and frameworks that emphasize performance, responsiveness, and user experience :",
       frameworks: [
         {
           logo: react,
@@ -56,17 +56,18 @@ export const projects = [
     },
     features: {
       parag:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error placeat architecto optio praesentium fuga delectus dolorum voluptas similique :",
+        "The website includes a range of features designed to enhance usability, ensure a seamless user experience, and meet the client’s specific needs :",
       list: [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quidem aut dolorum minus sit aspernatur error nisi obcaecati reiciendis.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quidem aut dolorum minus sit aspernatur error nisi obcaecati reiciendis, mollitia dolore? Repellendus necessitatibus, iure vero mollitia ab eos laborum quisquam.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quidem aut dolorum minus sit aspernatur error nisi obcaecati reiciendis, mollitia dolore?",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quidem aut dolorum minus sit aspernatur error nisi obcaecati reiciendis, mollitia dolore? Repellendus necessitatibus, iure vero mollitia ab eos laborum quisquam.",
+        "A modern design using the agency's logo colors to maintain brand identity.",
+        "Fully responsive layout, compatible with all devices.",
+        "Clear presentation of services and information for easy navigation.",
+        "User-friendly appointment form for scheduling services and selecting plans.",
+        "Admin dashboard for managing appointments with options to confirm or cancel.",
       ],
     },
     appscreens: {
       parag:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error placeat architecto optio praesentium fuga delectus dolorum voluptas.",
+        "The website includes several thoughtfully designed screens to enhance functionality and user interaction :",
       screens: [
         "/src/assets/images/projects/project-1/screens/1.webp",
         "/src/assets/images/projects/project-1/screens/2.webp",
@@ -96,10 +97,10 @@ export const projects = [
     plan: "Basic (PLAN 1)",
     link: "https://budget-window-cleaning.vercel.app/",
     about:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error placeat architecto optio praesentium fuga delectus dolorum voluptas similique quam quod repellat sequi eveniet exercitationem, libero perferendis, minima debitis eos, quas nostrum veritatis. Doloribus cupiditate vitae aut sequi nihil quia delectus? Error placeat architecto optio praesentium fuga delectus dolorum voluptas similique quam quod repellat sequi eveniet exercitationem, libero perferendis, minima debitis eos, quas nostrum veritatis. Doloribus cupiditate vitae aut sequi nihil quia delectus?",
+      "Budget Window Cleaning is a cleaning agency for which we developed a sleek and modern landing page. The site effectively presents the agency's services and information, featuring sections like a hero banner, reasons to choose them, services, testimonials, and FAQs. The landing page is designed with optimized SEO to enhance visibility and attract more clients.",
     tools: {
       parag:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error placeat architecto optio praesentium fuga delectus dolorum voluptas similique quam quod repellat sequi eveniet exercitationem, libero perferendis, minima debitis eos, quas nostrum veritatis.",
+        "We used efficient tools and frameworks to deliver a high-performing, visually appealing landing page :",
       frameworks: [
         {
           logo: react,
@@ -117,17 +118,19 @@ export const projects = [
     },
     features: {
       parag:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error placeat architecto optio praesentium fuga delectus dolorum voluptas similique :",
+        "The landing page includes several key features tailored to enhance user engagement and search engine visibility :",
       list: [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quidem aut dolorum minus sit aspernatur error nisi obcaecati reiciendis.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quidem aut dolorum minus sit aspernatur error nisi obcaecati reiciendis, mollitia dolore? Repellendus necessitatibus, iure vero mollitia ab eos laborum quisquam.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quidem aut dolorum minus sit aspernatur error nisi obcaecati reiciendis, mollitia dolore?",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quidem aut dolorum minus sit aspernatur error nisi obcaecati reiciendis, mollitia dolore? Repellendus necessitatibus, iure vero mollitia ab eos laborum quisquam.",
+        "A visually appealing hero section to capture attention immediately.",
+        'A "Why Choose Us" section to highlight the agency’s unique selling points.',
+        "Detailed services section to showcase the cleaning solutions offered.",
+        "Testimonials to build trust and credibility with potential clients.",
+        "An FAQ section to address common customer queries effectively.",
+        "SEO optimization to improve search rankings and drive traffic.",
       ],
     },
     appscreens: {
       parag:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error placeat architecto optio praesentium fuga delectus dolorum voluptas.",
+        "The landing page includes strategically designed sections for maximum impact :",
       screens: [
         "/src/assets/images/projects/project-2/screens/1.webp",
         "/src/assets/images/projects/project-2/screens/2.webp",
@@ -157,10 +160,10 @@ export const projects = [
     plan: "Basic (PLAN 1)",
     link: "https://charlotte-ultimate.vercel.app/",
     about:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error placeat architecto optio praesentium fuga delectus dolorum voluptas similique quam quod repellat sequi eveniet exercitationem, libero perferendis, minima debitis eos, quas nostrum veritatis. Doloribus cupiditate vitae aut sequi nihil quia delectus? Error placeat architecto optio praesentium fuga delectus dolorum voluptas similique quam quod repellat sequi eveniet exercitationem, libero perferendis, minima debitis eos, quas nostrum veritatis. Doloribus cupiditate vitae aut sequi nihil quia delectus?",
+      "Charlotte Ultimate Cleaning is a cleaning service agency for which we created a professional and modern landing page. The site features well-structured sections, including a hero banner, about, services, pricing, reasons to choose them, and a contact form, offering a clear and engaging presentation of the agency's offerings.",
     tools: {
       parag:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error placeat architecto optio praesentium fuga delectus dolorum voluptas similique quam quod repellat sequi eveniet exercitationem, libero perferendis, minima debitis eos, quas nostrum veritatis.",
+        "We utilized cutting-edge tools and frameworks to ensure a responsive and visually appealing landing page :",
       frameworks: [
         {
           logo: next,
@@ -178,17 +181,19 @@ export const projects = [
     },
     features: {
       parag:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error placeat architecto optio praesentium fuga delectus dolorum voluptas similique :",
+        "This landing page is designed to provide an optimal user experience with the following features :",
       list: [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quidem aut dolorum minus sit aspernatur error nisi obcaecati reiciendis.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quidem aut dolorum minus sit aspernatur error nisi obcaecati reiciendis, mollitia dolore? Repellendus necessitatibus, iure vero mollitia ab eos laborum quisquam.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quidem aut dolorum minus sit aspernatur error nisi obcaecati reiciendis, mollitia dolore?",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quidem aut dolorum minus sit aspernatur error nisi obcaecati reiciendis, mollitia dolore? Repellendus necessitatibus, iure vero mollitia ab eos laborum quisquam.",
+        "A captivating hero section to introduce the agency and grab attention.",
+        "An About section to highlight the agency's mission and background.",
+        "Detailed services section to showcase available cleaning solutions.",
+        "Pricing section to provide transparency and help users make informed decisions.",
+        "\"Why Choose Us\" section to emphasize the agency's unique advantages.",
+        "A contact form for easy client communication and inquiries.",
       ],
     },
     appscreens: {
       parag:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error placeat architecto optio praesentium fuga delectus dolorum voluptas.",
+        "The landing page includes thoughtfully designed sections for seamless navigation and user interaction :",
       screens: [
         "/src/assets/images/projects/project-3/screens/1.webp",
         "/src/assets/images/projects/project-3/screens/2.webp",
@@ -218,10 +223,10 @@ export const projects = [
     plan: "Standard (PLAN 2)",
     link: "https://diamond-bright.vercel.app/",
     about:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error placeat architecto optio praesentium fuga delectus dolorum voluptas similique quam quod repellat sequi eveniet exercitationem, libero perferendis, minima debitis eos, quas nostrum veritatis. Doloribus cupiditate vitae aut sequi nihil quia delectus? Error placeat architecto optio praesentium fuga delectus dolorum voluptas similique quam quod repellat sequi eveniet exercitationem, libero perferendis, minima debitis eos, quas nostrum veritatis. Doloribus cupiditate vitae aut sequi nihil quia delectus?",
+      "Diamond Bright is an agency specializing in cleaning services. We developed a multi-page website to highlight their mission, reasons to choose them, past projects, testimonials, and contact details. The site features a responsive and user-centric design, along with a comprehensive appointment form and a mini admin dashboard for managing bookings efficiently.",
     tools: {
       parag:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error placeat architecto optio praesentium fuga delectus dolorum voluptas similique quam quod repellat sequi eveniet exercitationem, libero perferendis, minima debitis eos, quas nostrum veritatis.",
+        "To build a functional and visually appealing website, we used advanced tools and frameworks that prioritize performance and interactivity :",
       frameworks: [
         {
           logo: next,
@@ -247,17 +252,18 @@ export const projects = [
     },
     features: {
       parag:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error placeat architecto optio praesentium fuga delectus dolorum voluptas similique :",
+        "The website integrates several features to provide a seamless experience and meet the client’s expectations :",
       list: [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quidem aut dolorum minus sit aspernatur error nisi obcaecati reiciendis.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quidem aut dolorum minus sit aspernatur error nisi obcaecati reiciendis, mollitia dolore? Repellendus necessitatibus, iure vero mollitia ab eos laborum quisquam.",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quidem aut dolorum minus sit aspernatur error nisi obcaecati reiciendis, mollitia dolore?",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quidem aut dolorum minus sit aspernatur error nisi obcaecati reiciendis, mollitia dolore? Repellendus necessitatibus, iure vero mollitia ab eos laborum quisquam.",
+        "A modern design that aligns with the agency's branding for a professional look.",
+        "Fully responsive design to ensure compatibility with all devices.",
+        "Detailed pages showcasing the agency's mission, services, testimonials, and past projects.",
+        "An easy-to-use appointment form for scheduling cleaning services.",
+        "An admin dashboard to manage and track client bookings, including confirmation and cancellation options.",
       ],
     },
     appscreens: {
       parag:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error placeat architecto optio praesentium fuga delectus dolorum voluptas.",
+        "The website includes essential screens tailored for user interaction and administration :",
       screens: [
         "/src/assets/images/projects/project-4/screens/1.webp",
         "/src/assets/images/projects/project-4/screens/2.webp",

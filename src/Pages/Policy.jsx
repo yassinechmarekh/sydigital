@@ -4,23 +4,67 @@ import React from "react";
 export default function Policy() {
   const body = [
     {
-      title:
-        "Our campaigns get your business in front of the right people at the right time to increase organic traffic and boost engagement.",
+      title: "1. Information We Collect",
       parag: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at nisl ligula. Suspendisse vitae ex fermentum, suscipit sem id, dapibus orci. Cras efficitur mi augue, ut sodales felis rhoncus bibendum. Fusce sagittis nibh orci, id vestibulum tortor aliquet ut. Vivamus maximus felis ac nisl luctus, ut aliquet massa suscipit. Sed scelerisque quam justo, sed volutpat neque tempor porta. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam consequat tellus id risus condimentum fringilla. Etiam maximus porttitor magna sit amet consectetur. Integer eget ante scelerisque tortor sodales aliquet. Integer in vestibulum leo, vitae tristique orci. Etiam tortor sem, porttitor at pellentesque sit amet, fringilla nec massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at nisl ligula. Suspendisse vitae ex fermentum, suscipit sem id, dapibus orci.",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at nisl ligula. Suspendisse vitae ex fermentum, suscipit sem id, dapibus orci. Cras efficitur mi augue, ut sodales felis rhoncus bibendum.",
+        "We collect personal information only when you provide it voluntarily through our appointment form. This may include :",
+      ],
+      list: [
+        "Personal Identification Information: Name, email address, phone number, company name (if applicable), and any other details you choose to provide when scheduling an appointment or making an inquiry.",
       ],
     },
     {
-      title: "Security and Retention",
+      title: "2.How We Use Your Information",
       parag: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at nisl ligula. Suspendisse vitae ex fermentum, suscipit sem id, dapibus orci. Cras efficitur mi augue, ut sodales felis rhoncus bibendum. Fusce sagittis nibh orci, id vestibulum tortor aliquet ut. Vivamus maximus felis ac nisl luctus, ut aliquet massa suscipit. Sed scelerisque quam justo, sed volutpat neque tempor porta. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam consequat tellus id risus condimentum fringilla.",
+        "The information you provide is used solely for the purpose of :",
+      ],
+      list: [
+        "Scheduling and confirming your appointment",
+        "Communicating with you regarding your project or inquiry",
+        "Providing you with the services or information you requested",
+        "Sending a follow-up email after your appointment or inquiry (if necessary)",
+      ],
+    },
+    {
+      title: "3. How We Protect Your Information",
+      parag: [
+        "We take the security of your personal information seriously and implement appropriate measures to safeguard it. These include :",
+      ],
+      list: [
+        "Storing your data securely and limiting access to authorized personnel only",
+        "Using encrypted connections when transmitting sensitive information (such as your appointment details)",
+      ],
+    },
+    {
+      title: "4. Your Rights and Choices",
+      parag: [
+        "Since we only collect information you voluntarily provide, you have full control over the information you share with us. You may request to :",
+      ],
+      list: [
+        "Access, modify, or delete any personal information you've provided",
+        "Opt-out of further communications by contacting us directly or following any opt-out instructions in our emails",
+      ],
+    },
+    {
+      title: "5. Third-Party Links",
+      parag: [
+        "Our website may contain links to third-party websites. These sites have their own privacy policies, and we encourage you to review them before providing any personal information. We are not responsible for the content or privacy practices of these external sites.",
+      ],
+    },
+    {
+      title: "6. Changes to This Privacy Policy",
+      parag: [
+        'We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated "Last Updated" date. We recommend reviewing this policy periodically to stay informed about how we are protecting your information.',
       ],
     },
     {
       title: "Contact Us",
       parag: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at nisl ligula. Suspendisse vitae ex fermentum, suscipit sem id, dapibus orci. Cras efficitur mi augue, ut sodales felis rhoncus bibendum. Fusce sagittis nibh orci, id vestibulum tortor aliquet ut. Vivamus maximus felis ac nisl luctus, ut aliquet massa suscipit. Sed scelerisque quam justo, sed volutpat neque tempor porta. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam consequat tellus id risus condimentum fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at nisl ligula.",
+        "If you have any questions or concerns about this Privacy Policy, or if you wish to access or modify the information you have shared with us, please contact us at:",
+      ],
+      list: [
+        "SyDigital",
+        "Address: Morocco, Casablanca",
+        "Mail : sydigitalteam@gmail.com",
       ],
     },
   ];
@@ -29,45 +73,52 @@ export default function Policy() {
       <TopPage page="Privacy Policy" />
       <div className={"py-10 bg-blue-100 dark:bg-gunmetal"}>
         <div className="container">
-          <h1 className={"text-3xl text-gunmetal dark:text-white font-bold capitalize"}>
+          <h1
+            className={
+              "text-3xl text-gunmetal dark:text-white font-bold capitalize"
+            }
+          >
             Privacy Policy
           </h1>
           <p className={"parag mt-4"}>
-            For each project we establish relationships with partners who we
-            know will help us create added value for your project. As well as
-            bringing together the public and private sectors, we make
-            sector-overarching links to gather knowledge and to learn from each
-            other who we know will help us create added value for your project.
+            At SyDigital, we respect your privacy and are committed to
+            protecting any personal information you provide to us. This Privacy
+            Policy outlines how we handle your information when you use our
+            website and interact with us, particularly through the appointment
+            form.
           </p>
           <h4
-            className={"my-3 text-xl text-caribbean-current dark:text-turquoise font-semibold capitalize"}
+            className={
+              "my-3 text-xl text-caribbean-current dark:text-turquoise font-semibold capitalize"
+            }
           >
-            Updated January 10, 2021
+            Updated November 27, 2024
           </h4>
           <p className={"parag"}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at nisl
-            ligula. Suspendisse vitae ex fermentum, suscipit sem id, dapibus
-            orci. Cras efficitur mi augue, ut sodales felis rhoncus bibendum.
-            Fusce sagittis nibh orci, id vestibulum tortor aliquet ut. Vivamus
-            maximus felis ac nisl luctus. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Nam at nisl ligula. Suspendisse vitae
-            ex fermentum, suscipit sem id, dapibus orci. Cras efficitur mi
-            augue, ut sodales felis rhoncus bibendum. Fusce sagittis nibh orci,
-            id vestibulum tortor aliquet ut. Vivamus maximus felis ac nisl
-            luctus.
+            We are committed to safeguarding your privacy. We understand the
+            importance of protecting your personal data and want you to feel
+            confident while using our website. This Privacy Policy explains how
+            we collect, use, and protect the information you provide when
+            interacting with us, particularly through the appointment form on
+            our website. We take your privacy seriously and ensure that any
+            personal information you share with us is treated with the utmost
+            care and security.
           </p>
           <p className={"parag mt-3"}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at nisl
-            ligula. Suspendisse vitae ex fermentum, suscipit sem id, dapibus
-            orci. Cras efficitur mi augue Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Nam at nisl ligula. Suspendisse vitae
-            ex fermentum, suscipit sem id, dapibus orci. Cras efficitur mi
-            augue.
+            We do not collect or store sensitive personal information unless you
+            voluntarily provide it to us through the appointment form or other
+            communication channels. This policy applies to all interactions with
+            our website and outlines the steps we take to protect your privacy
+            and how we handle your data.
           </p>
           <div className={"mt-6"}>
             {body.map((item, index) => (
               <div key={index} className={"py-6 border-t border-slate-600"}>
-                <h3 className={"text-2xl font-semibold text-caribbean-current dark:text-white"}>
+                <h3
+                  className={
+                    "text-2xl font-semibold text-caribbean-current dark:text-white"
+                  }
+                >
                   {item.title}
                 </h3>
                 {item.parag.map((element, key) => (
@@ -75,6 +126,13 @@ export default function Policy() {
                     {element}
                   </p>
                 ))}
+                {item.list && (
+                  <ul className={"parag mt-2 list-disc w-[95%] mx-auto"}>
+                    {item.list.map((l, key) => (
+                      <li key={key}>{l}</li>
+                    ))}
+                  </ul>
+                )}
               </div>
             ))}
           </div>

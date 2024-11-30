@@ -45,7 +45,7 @@ export default function LargeCard({ blog }) {
             <h5>{blog.date}</h5>
           </div>
         </div>
-        <p className={"parag text-sm"}>{blog.article[0].slice(0,100)}</p>
+        <p className={"parag text-sm"}>{blog.article[0].slice(0,100)} {" ..."}</p>
         <Link to={`/blog/${blog.slug}`}
           className={
             "py-1 px-3 w-fit bg-transparent hover:bg-caribbean-current dark:hover:bg-turquoise border border-caribbean-current/30 dark:border-turquoise/30 text-caribbean-current dark:text-turquoise hover:text-blue-100 dark:hover:text-gunmetal text-sm rounded-lg transition-colors capitalize"

@@ -1,8 +1,6 @@
 import React from "react";
 import TitleSection from "./TitleSection";
 import SidebarCard from "./SidebarCard";
-import blogImg1 from "@/assets/images/blog/1.jpg";
-import blogImg2 from "@/assets/images/blog/2.jpg";
 import { Blogs } from "@/data/Blogs";
 
 export default function Sidebar() {

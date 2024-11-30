@@ -9,9 +9,8 @@ const Projects = () => {
       <div className="container">
         <TopSection
           subtitle="Our Showcase Projects"
-          title="Tailored Solutions, Proven Results, and Exceptional Service"
-          parag="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum dolor
-        dicta tempora non. Eaque, optio!"
+          title="See Our Work in Action"
+          parag="We take pride in delivering high-quality digital solutions. Below are some of the projects we’ve successfully completed, showcasing our expertise in creating impactful online experiences for our clients."
         />
         <div className="mt-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
