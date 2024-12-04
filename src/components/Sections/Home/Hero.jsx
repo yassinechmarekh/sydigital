@@ -101,7 +101,7 @@ export default function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 1 }}
-              className={"absolute top-full left-1/3 w-28 hidden lg:block"}
+              className={"absolute top-full left-1/3 w-28 hidden xl:block"}
             >
               <Lottie options={bgElement2Options} />
             </motion.div>
