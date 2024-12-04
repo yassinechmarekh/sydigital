@@ -13,7 +13,7 @@ import Appointment from "./Pages/Appointment";
 import ProjectInfo from "./Pages/ProjectInfo";
 import Policy from "./Pages/Policy";
 import Singleproject from "./pages/singleproject";
-import Projectspg from "./Pages/Projects";
+import Projectspg from "./Pages/projects";
 import ProjectSingle from "./Pages/ProjectSingle";
 import NotFound from "./Pages/NotFound";
 
