@@ -4,7 +4,7 @@ import Home from "./Pages/Home";
 import Header from "./components/Global/Header";
 import Footer from "./components/Global/Footer";
 import About from "./Pages/About";
-import Services from "./Pages/Services";
+import Services from "./pages/services";
 import { Toaster } from "@/components/ui/toaster"
 import Blogs from "./Pages/Blogs";
 import Contact from "./Pages/Contact";
