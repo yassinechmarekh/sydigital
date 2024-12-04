@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaLinkedin } from "react-icons/fa";
 import { TbWorldWww } from "react-icons/tb";
-import yassineImg from "@/assets/images/team/yassine.jpg";
+import yassineImg from "@/assets/images/team/Yassine.jpg";
 import sfenImg from "@/assets/images/team/sfen.jpeg";
 import { motion } from "framer-motion";
 
