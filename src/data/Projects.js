@@ -10,7 +10,7 @@ import gsap from "../assets/images/Tools/gsap.svg";
 export const projects = [
   {
     id: 1,
-    mainImag: "/src/assets/images/projects/project-1/main.webp",
+    mainImag: "/public/projects/project-1/main.webp",
     title: "Best Website for Best Portland Cleaners",
     tags: ["Standard Website", "Standard Plan", "Mini Dashboard"],
     detailsImgs: [
