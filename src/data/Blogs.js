@@ -16,7 +16,7 @@ function slugify(title) {
 export const Blogs = [
   {
     id: 1,
-    image: '/src/assets/images/blog/1.webp',
+    image: '/blog/1.webp',
     title: "Why Your Business Needs a Modern Website ?",
     slug: slugify("Why Your Business Needs a Modern Website"),
     date: "15/11/2024",
@@ -34,7 +34,7 @@ export const Blogs = [
   },
   {
     id: 2,
-    image: '/src/assets/images/blog/2.webp',
+    image: '/blog/2.webp',
     title: "Is Your Website Failing to Keep Visitors Engaged ?",
     slug: slugify("Is Your Website Failing to Keep Visitors Engaged"),
     date: "21/11/2024",
@@ -50,7 +50,7 @@ export const Blogs = [
   },
   {
     id: 3,
-    image: '/src/assets/images/blog/3.webp',
+    image: '/blog/3.webp',
     title: "Why Your Website Needs to Be Mobile-Friendly ?",
     slug: slugify("Why Your Website Needs to Be Mobile-Friendly"),
     date: "23/11/2024",
@@ -66,7 +66,7 @@ export const Blogs = [
   },
   {
     id: 4,
-    image: '/src/assets/images/blog/4.webp',
+    image: '/blog/4.webp',
     title: "How a Well-Designed Website Can Boost Your Brand’s Credibility ?",
     slug: slugify(
       "How a Well-Designed Website Can Boost Your Brand’s Credibility"
@@ -86,7 +86,7 @@ export const Blogs = [
   },
   {
     id: 5,
-    image: '/src/assets/images/blog/5.webp',
+    image: '/blog/5.webp',
     title: "The Importance of Website Speed for User Experience and SEO",
     slug: slugify(
       "The Importance of Website Speed for User Experience and SEO"
@@ -106,7 +106,7 @@ export const Blogs = [
   },
   {
     id: 6,
-    image: '/src/assets/images/blog/6.webp',
+    image: '/blog/6.webp',
     title: "How to Optimize Your Website for Search Engines (SEO Tips)",
     slug: slugify(
       "How to Optimize Your Website for Search Engines SEO Tips"
