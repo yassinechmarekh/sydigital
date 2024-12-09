@@ -83,7 +83,7 @@ export default function Arguments() {
                   transition={{ duration: 0.5, delay: 0.7 }}
                   className={"mt-6"}
                 >
-                  <Link
+                  <Link to='/appointment'
                     className={"flex items-center gap-2 main-btn text-base"}
                   >
                     <span>Get Started</span> <MdArrowOutward size={18} />

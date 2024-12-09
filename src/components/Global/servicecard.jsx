@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 // eslint-disable-next-line react/prop-types
 const Servicecard = ({ service }) => {
@@ -26,9 +27,9 @@ const Servicecard = ({ service }) => {
         <p className="parag">
           {service.description}
         </p>
-        <div className="cardservbtn  bg-turquoise font-bold text-gunmetal">
+        <Link to='/appointment' className="cardservbtn  bg-turquoise font-bold text-gunmetal">
           Get a Free Quote
-        </div>
+        </Link>
       </div>
       <div className="cardserviceimg">
         <img src={service.imagechara} alt="" className="imagecharacard" />

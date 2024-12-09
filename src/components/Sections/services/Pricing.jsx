@@ -195,7 +195,7 @@ export default function Pricing() {
                 ))}
               </ul>
               <div className={"flex flex-col gap-2"}>
-                <Link
+                <Link to='/appointment'
                   className={`py-2 text-lg font-bold text-center ${
                     item.id % 2 === 0
                       ? "bg-gunmetal group-hover:bg-turquoise text-turquoise group-hover:text-gunmetal"

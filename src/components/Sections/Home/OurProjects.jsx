@@ -15,7 +15,7 @@ export default function OurProjects() {
           title="Transforming Ideas into Digital Reality"
           parag="We take pride in delivering exceptional projects that bring our clients' visions to life. From custom websites to advanced web applications, our work reflects our commitment to quality, innovation, and success."
         />
-        <div className={"grid grid-cols-2 gap-8 mt-8"}>
+        <div className={"grid grid-cols-1 md:grid-cols-2 gap-8 mt-8"}>
           {ourprojects.map((project) => (
             <Card key={project.id} project={project} />
           ))}

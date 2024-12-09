@@ -9,6 +9,16 @@ import axios from "axios";
 import { useToast } from "@/hooks/use-toast";
 
 export default function Form() {
+  const[btncontent,setcontentbtn]=useState()
+  const[spinnerstate,setspinnerstate]=useState(false)
+  useEffect(()=>{
+    if(spinnerstate==true){
+      setcontentbtn( <div className="w-6 h-6 border-4 border-gray-300 border-t-blue-500 rounded-full animate-spin"></div>
+      )
+    }else{
+      setcontentbtn(<span>Submit</span>)
+    }
+  },[spinnerstate])
 
   const [planprime, setprimeplan] = useState("")
   const [contentrequir,setcontentrequir]=useState("")
@@ -73,14 +83,16 @@ export default function Form() {
     }).then(res=>res.data).then(data=>{
       console.log(data.message)
       toast({
-        description: "we received your appointment , our team will response you as soon as possible : ",
+        description: "We received your appointment , our team will response you as soon as possible. ",
       })
       setdosabledbtn(false)
+      setspinnerstate(false)
     }).catch(err=>{
       toast({
         description: "probleme : ",
       })
       setdosabledbtn(false)
+      setspinnerstate(false)
       console.log(err.message)
     })
   }
@@ -174,14 +186,17 @@ export default function Form() {
           <MyTextarea placeholder="Your Message" id="message" value={formdata2.message} name={"message"} onChange={handleChange} />
         </div>
         <AcceptOurCondition />
-        <span>{contentrequir}</span>
+        <span className="text-red-600">{contentrequir}</span>
         <button type="submit" onClick={async(e) => {
           e.preventDefault()
           setdosabledbtn(true)
+          setspinnerstate(true)
           if(formdata2.name==""||formdata2.companyname==""||formdata2.plan==""||formdata2.message==""){
             setdosabledbtn(false)
             setcontentrequir("You Have To Fill All The Required Fields (*)")
+            setspinnerstate(false)
           }else{
+            setcontentrequir("")
             const selectedPages = Object.keys(checkedPages).filter(
               (key) => {
                 if (key != "Other") {
@@ -204,6 +219,9 @@ export default function Form() {
 
             if(selectedPages.length==0){
 setcontentrequir("You Have To Fill All The Required Fields (*)")
+setdosabledbtn(false)
+setspinnerstate(false)
+
             }else{
               await sbmt(selectedPages)
               setcontentrequir("")
@@ -212,7 +230,7 @@ setcontentrequir("You Have To Fill All The Required Fields (*)")
           }
           
         }} className={"main-btn text-base"} disabled={diabledbtn}>
-          Submit
+          {btncontent}
         </button>
       </form>
     </div>

@@ -1,69 +1,86 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ContactInput from "./Form/ContactInput";
 import ContactTextarea from "./Form/ContactTextarea";
 import axios from "axios";
 
 import { useToast } from "@/hooks/use-toast";
-
+// import Spinnerpage from "@/components/Global/spinnerpage";
 
 export default function FormCard() {
-  const[diabledbtn,setdosabledbtn]=useState(false)
-  const { toast } = useToast()
-  const [statefill, setstatefill] = useState("")
-  const [formData, setFormData] = useState({
-    firstName: '',
-    message: '',
-    email: '',
-    phone: '',
-    lastName: ''
+  const [diabledbtn, setdosabledbtn] = useState(false);
+  const [contentbtn, setbtncntn] = useState();
+  const [spnload, setspnload] = useState();
 
-  })
+  const { toast } = useToast();
+  const [statefill, setstatefill] = useState("");
+  const [formData, setFormData] = useState({
+    firstName: "",
+    message: "",
+    email: "",
+    phone: "",
+    lastName: "",
+  });
+
+  useEffect(() => {
+    if (spnload == true) {
+      setbtncntn(
+        <div className="w-6 h-6 border-4 border-gray-300 border-t-blue-500 rounded-full animate-spin"></div>
+      );
+    } else {
+      setbtncntn(<span>Send</span>);
+    }
+  }, [spnload]);
 
   const handleChange = (e) => {
-    const { name, value } = e.target
-    setFormData(prevData => ({
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
       ...prevData,
-      [name]: value
-    }))
-  }
+      [name]: value,
+    }));
+  };
 
   const onSubmit = async () => {
-    console.log("wsl hna")
-    console.log(formData.phone)
+    console.log("wsl hna");
+    console.log(formData.phone);
     try {
-
-
-      const rep = await axios.post(`${import.meta.env.VITE_LINK_API}/contact/add`, {
-        firstName: formData.firstName, lastName: formData.lastName, email: formData.email, phone: formData.phone, message: formData.message
-      }, {
-        headers: {
-          "Content-Type": "application/json",
+      const rep = await axios.post(
+        `${import.meta.env.VITE_LINK_API}/contact/add`,
+        {
+          firstName: formData.firstName,
+          lastName: formData.lastName,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
         },
-      });
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
       if (rep && rep.status === 200) {
-
-        console.log(rep.data.message)
+        console.log(rep.data.message);
         toast({
           description: "Your message has been sent.",
-        })
-        setdosabledbtn(false)
+        });
+        setdosabledbtn(false);
+        setspnload(false);
       } else {
-
         toast({
           description: "probleme : ",
-        })
-        setdosabledbtn(false) 
+        });
+        setdosabledbtn(false);
+        setspnload(false);
       }
-    }
-    catch (error) {
-      console.log(error.message)
+    } catch (error) {
+      console.log(error.message);
       toast({
         description: "catch : ",
-      })
-      setdosabledbtn(false)
-
+      });
+      setdosabledbtn(false);
+      setspnload(false);
     }
-  }
+  };
   return (
     <div
       className={
@@ -80,42 +97,77 @@ export default function FormCard() {
       <form className={"flex flex-col gap-y-4"}>
         <div className="flex flex-col sm:flex-row gap-4">
           <div className="w-full sm:w-1/2">
-            <ContactInput value={formData.firstName} name="firstName" onchange={handleChange} placeholder="First Name * " type="text" />
+            <ContactInput
+              value={formData.firstName}
+              name="firstName"
+              onchange={handleChange}
+              placeholder="First Name * "
+              type="text"
+            />
           </div>
           <div className="w-full sm:w-1/2">
-            <ContactInput placeholder="Last Name *" name="lastName" value={formData.lastName} onchange={handleChange} type="text" />
+            <ContactInput
+              placeholder="Last Name *"
+              name="lastName"
+              value={formData.lastName}
+              onchange={handleChange}
+              type="text"
+            />
           </div>
         </div>
         <div className="flex flex-col sm:flex-row gap-4">
           <div className="w-full sm:w-1/2">
-            <ContactInput placeholder="Email *" name="email" value={formData.email} onchange={handleChange} type="email" />
+            <ContactInput
+              placeholder="Email *"
+              name="email"
+              value={formData.email}
+              onchange={handleChange}
+              type="email"
+            />
           </div>
           <div className="w-full sm:w-1/2">
-            <ContactInput placeholder="Phone *" name="phone" value={formData.phoneNumber} onchange={handleChange} type="tel" />
+            <ContactInput
+              placeholder="Phone *"
+              name="phone"
+              value={formData.phoneNumber}
+              onchange={handleChange}
+              type="tel"
+            />
           </div>
         </div>
-        <ContactTextarea placeholder="Message *" name="message" value={formData.message} onchange={handleChange} />
-        <span className="text-slate-100">{statefill}</span>
+        <ContactTextarea
+          placeholder="Message *"
+          name="message"
+          value={formData.message}
+          onchange={handleChange}
+        />
+        <span className="text-red-600 ">{statefill}</span>
         <button
           type="submit"
           className={
             "main-btn text-base bg-white dark:bg-turquoise text-caribbean-current dark:text-gunmetal"
           }
           onClick={(e) => {
-            e.preventDefault()
-            setdosabledbtn(true)
-            if (formData.email == "" || formData.firstName == "" || formData.lastName == "" || formData.phone == "") {
-              setstatefill("You Have To Fill All The Required Fields (*)")
-              setdosabledbtn(false)
+            e.preventDefault();
+            setspnload(true);
+            setdosabledbtn(true);
+            if (
+              formData.email == "" ||
+              formData.firstName == "" ||
+              formData.lastName == "" ||
+              formData.phone == ""
+            ) {
+              setstatefill("You Have To Fill All The Required Fields (*)");
+              setdosabledbtn(false);
+              setspnload(false);
             } else {
-              setstatefill("")
-              onSubmit()
+              setstatefill("");
+              onSubmit();
             }
-
           }}
           disabled={diabledbtn}
         >
-          Send
+          {contentbtn}
         </button>
       </form>
     </div>

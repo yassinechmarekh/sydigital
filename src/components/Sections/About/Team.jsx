@@ -32,15 +32,25 @@ export default function Team() {
                 }
               />
             </div>
-            <div className={"py-2 flex justify-between text-slate-600 dark:text-slate-300"}>
+            <div
+              className={
+                "py-2 flex justify-between text-slate-600 dark:text-slate-300"
+              }
+            >
               <div>
-                <h2 className={"text-gunmetal dark:text-white text-xl font-semibold capitalize"}>
+                <h2
+                  className={
+                    "text-gunmetal dark:text-white text-xl font-semibold capitalize"
+                  }
+                >
                   Yassine <span className={"uppercase"}>Chmarekh</span>
                 </h2>
                 <h4>CEO Founder, Web Devloper</h4>
               </div>
               <div className={"flex gap-3"}>
                 <Link
+                  to="https://yassine-chmarekh.vercel.app/"
+                  target="_blank"
                   className={
                     "hover:text-caribbean-current dark:hover:text-turquoise hover:scale-90 transition-all duration-300 ease-in-out"
                   }
@@ -48,6 +58,8 @@ export default function Team() {
                   <TbWorldWww size={24} />
                 </Link>
                 <Link
+                  to="https://www.linkedin.com/in/yassine-chmarekh/"
+                  target="_blank"
                   className={
                     "hover:text-caribbean-current dark:hover:text-turquoise hover:scale-90 transition-all duration-300 ease-in-out"
                   }
@@ -72,15 +84,25 @@ export default function Team() {
                 }
               />
             </div>
-            <div className={"py-2 flex justify-between text-slate-600 dark:text-slate-300"}>
+            <div
+              className={
+                "py-2 flex justify-between text-slate-600 dark:text-slate-300"
+              }
+            >
               <div>
-                <h2 className={"text-gunmetal dark:text-white text-xl font-semibold capitalize"}>
+                <h2
+                  className={
+                    "text-gunmetal dark:text-white text-xl font-semibold capitalize"
+                  }
+                >
                   Soufiane <span className={"uppercase"}>Taki</span>
                 </h2>
                 <h4>CEO Founder, Web Devloper</h4>
               </div>
               <div className={"flex gap-3"}>
                 <Link
+                  to="http://soufianetaki.info/"
+                  target="_blank"
                   className={
                     "hover:text-caribbean-current dark:hover:text-turquoise hover:scale-90 transition-all duration-300 ease-in-out"
                   }
@@ -88,6 +110,8 @@ export default function Team() {
                   <TbWorldWww size={24} />
                 </Link>
                 <Link
+                  to="https://www.linkedin.com/in/soufiane-taki-199868340/"
+                  target="_blank"
                   className={
                     "hover:text-caribbean-current dark:hover:text-turquoise hover:scale-90 transition-all duration-300 ease-in-out"
                   }

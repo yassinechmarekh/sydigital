@@ -115,7 +115,7 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.7 }}
               className={"mt-6"}
             >
-              <Link className={"flex items-center gap-2 main-btn text-base"}>
+              <Link to='/appointment' className={"flex items-center gap-2 main-btn text-base"}>
                 <span>Get Started</span> <FaArrowRight size={18} />
               </Link>
             </motion.div>

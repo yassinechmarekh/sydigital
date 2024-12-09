@@ -42,7 +42,7 @@ export default function ContactBanner() {
               transition={{ duration: 0.5, delay: 0.7 }}
               className={"my-6"}
             >
-              <Link className="main-btn">Contact Us</Link>
+              <Link to='/contact' className="main-btn">Contact Us</Link>
             </motion.div>
           </div>
           <div className="w-full md:w-1/2">
